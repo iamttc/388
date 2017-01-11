@@ -1,4 +1,3 @@
-Repository for EECS 388 projects.
+# EECS 388 Projects
 
 Created by Trever Cullen and Hiro Christoph
-
