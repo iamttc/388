@@ -20,10 +20,10 @@ import httplib, urlparse, sys, urllib, math
 #Get original url
 #url = sys.argv[1]
 url = 'https://eecs388.org/project1/api?token=402a574d265dc212ee64970f159575d0&user=admin&command1=ListFiles&command2=NoOp'
+print(url)
 parsedUrl = urlparse.urlparse(url)
 token = parsedUrl.query.split('&')[0][6:]
 message = parsedUrl.query.split('&', 1)[1]
-print(message)
 
 #Conduct attack
 extension = '&command3=UnlockAllSafes'
@@ -35,8 +35,7 @@ h = md5(state=state, count=count)
 h.update(extension)
 newtoken = urllib.quote(h.hexdigest())
 
-url = 'https://eecs388.org/project1/api?token=' + newtoken + '&' + message + extension
-print(url)
+url = 'https://' + parsedUrl.hostname + parsedUrl.path + '?token=' + newtoken + '&' + message + extension
 
 #Send url
 parsedUrl = urlparse.urlparse(url)
