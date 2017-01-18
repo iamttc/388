@@ -1,0 +1,15 @@
+#Notes from discussion
+#Two files same md5 hash, but print out different messages
+#Md5 of both files same, but sha1 will be different
+
+
+
+
+#So write a program that can do both things, and decide based on blob
+#Blob will be different but look the same ;D
+#Program vessel for doing good or bad, but is believed to always get good input. 
+#However we can give it bad input that looks like good input (when hashed by MD5 and
+#trick the user
+
+
+
