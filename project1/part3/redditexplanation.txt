@@ -1,0 +1,67 @@
+Bleichenbacher attack on weak digital signature verification.
+Digital signatures using PKCS1.5 and RSA are meant to work like so: 
+You take the item you want to sign and calculate a hash, 
+you then pad this hash like so:
+
+0x0001ffff...ffff00[ASN1][HASH]
+
+where ASN1 are basically just a sequence of bytes that tell the 
+receiver what type of algorithm was used. 
+
+This value should use enough 0xff bytes to end up the same size as the modulus.
+The padded value is then put through an RSA decryption and the 
+result of this is the number sent to the receiver.
+
+The receiver should take the value it received, perform an RSA 
+encryption on it, check the format of the result is as specified 
+above and then use the hash to check if the data that has been 
+signed has changed.
+
+Remember that for e=3 the RSA encryption just involves cubing 
+the received number then taking the modulus as c = m ** e % n and e = 3
+
+The flaw that Bleichenbacher exploited was that when some receivers 
+were checking the format of the result they forgot to check the 
+length of the result/the right padding of the hash.
+i.e. They were checking for the presence of:
+
+0x0001[Any number of 0xFF bytes]00[ASN1][HASH][Any Bytes]
+
+To forge a digital signature for e=3 an attacker needs to create 
+something which, when cubed and having the modulus operation 
+applied produces something that passes the format check.
+
+This can be created by the following method:
+*Take a value you want to forge 
+ i.e. 0x0001[Any number of 0xFF bytes]00[ASN1][HASH][Any Bytes].
+ The any bytes part will need to have a good number of bytes
+*Calculate the cube root of this number, it will be a non 
+ integer number so wont be usable yet for a forgery
+*Round your number to the nearest integer, this value 
+ can be used for a forgery
+
+When your forged value is cubed during verification it will produce 
+a value like below:
+
+0x0001[Any number of 0xFF bytes]00[ASN1][HASH][Different Bytes]
+
+Where the [Different Bytes] will be different bytes to what 
+you originally used (since you rounded).
+
+If the digital signature verification code work correctly the 
+check will fail because the last few bytes of the encryption 
+result have changed but with broken verification code as found 
+by Bleichenbacher the last bytes aren't checked so the attack 
+works and the signature is treated as valid.
+
+If e was bigger than 3 you would need to use a different 
+factor during the forgery (for example for e = 7 you would 
+need to calculate the 7th root not the cube root).
+
+This means you need more bytes at the end of the forged value 
+as the rounding will have a bigger effect on the encryption result 
+(i.e. it will change more bytes), I am not sure how big the e value 
+needs to get before the attack becomes unworkable 
+(because the [HASH] calue is changed as well), but maybe this 
+is why 5 or 7 don't work (Though e = 7 would be unusual 
+anyway because e is normally a fermat prime which 7 is not)
