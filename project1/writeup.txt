@@ -5,10 +5,10 @@ https://crypto.stackexchange.com/questions/3349/purpose-of-outer-key-in-hmac/338
 2. Briefly explain why the technique you explored in Part 2.2 poses a danger to systems that rely on digital signatures to verify the integrity of programs before they are installed or executed. Examples include Microsoft Authenticode and most Linux package managers. (You may assume that these systems sign MD5 hashes of the programs.)
 With the technique explored in Part 2.2, we saw that we can quite easily create programs that have the same MD5 hash but do vastly different things. This is incredibly dangerous to systems
 that rely on digital signatures to verify the integrity of their programs, since we have now seen that they can be easily tricked into accepting a malicious program that has the same hash
-as a perfectly fine program. These systems can easily be attacked by someone who at first provides a program that is safe and has a specific MD5 hash, which the package manager will happily verify by hashing the program and let the user install / execute the program.
+as a perfectly fine program. These systems can easily be attacked by someone who at first provides a program that is safe and has a specific MD5 hash, which the package manager will happily verify by hashing the program and letting the user install / execute the program.
 At another point in time, the attacker can provide a malicious program that when hashed with MD5 will produce the same hash as the safe program. Although the program is actually different, it will
-pass the pacakge managers integrity verification as it hashes to the same value, and thus a user can be subtly tricked into downloading and possibly executing an unsafe program. If hash collision are easily created, then
-systems that solely rely on checking digial signatures for integrity verification can be fooled, and thus the systems are vulnerable.
+pass the package managers integrity verification as it hashes to the same value, and thus a user can be subtly tricked into downloading and executing an unsafe program. If hash collision are easily created, then
+systems that solely rely on checking digital signatures for integrity verification can be fooled, and thus the systems are vulnerable.
 
 3. Since 2010, NIST has specified that RSA public exponents (e) should be at least 216 + 1. Briefly explain why Bleichenbacher’s attack would not work for these keys.
 The Bleichenbacher attack works well for keys with the public exponent e = 3 because the encrypted message is often not affected by the modulus (number produced is too small to "wrap around"),
