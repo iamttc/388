@@ -1,4 +1,8 @@
 1. With reference to the construction of HMAC, explain how changing the design of the API in Part 1.2 to use token = HMAC_[user’s password](user=. . . ) would avoid the length extension vulnerability.
+*Token as HMAC instead of hash
+*Hashes we can start with internal state of machine and just append on
+*This attack can be done on hashes with construction H(secret ∥ message)[1] when message and the length of secret is known
+*"Note that since HMAC doesn't use the construction H(key ∥ message), HMAC hashes are not prone to length extension attacks.[4] The SHA-3 algorithm is not susceptible to this attack.[5]"
 
 https://crypto.stackexchange.com/questions/3349/purpose-of-outer-key-in-hmac/3382#3382
 
