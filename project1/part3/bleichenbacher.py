@@ -32,6 +32,6 @@ toforge = full + garbage
 
 # calculate cube root, will be non integer
 from roots import integer_nthroot
-forged_signature = integer_nthroot(int(toforge, 16), 65536)[0]
+forged_signature = integer_nthroot(int(toforge, 16), 3)[0]
 
 print integer_to_base64(forged_signature)
