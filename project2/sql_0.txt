@@ -5,3 +5,10 @@ turns AND into AND ( x OR y), where y always evaluates to true
 
 
 username=victim&password=%27%20OR%20%271%27%3D%271
+
+
+or
+
+' OR 1#
+
+username=victim&password=%27%20OR%201%23

