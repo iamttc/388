@@ -1,0 +1,8 @@
+
+Raw binary very important -> we want this to look like ' OR 1#xxxx (so hash
+has to look like that in the end, which means we need to brute force and 
+find a password that hashes that way?)
+
+
+‘ space OR space 1#
+27 20 4F 52 20 31 23  this is hex
