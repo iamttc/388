@@ -6,3 +6,25 @@ find a password that hashes that way?)
 
 ‘ space OR space 1#
 27 20 4F 52 20 31 23  this is hex
+
+
+‘ space OR space 1#
+27 20 4F 52 20 31 23 
+
+'OR 1#
+'oR 1#
+'Or 1#
+'or 1#
+27 4F/6F 52/72 20 31 23 
+
+'||'1
+27      27 31
+
+'or'1
+'Or'1
+'oR'1
+'OR'1
+
+27 4F/6F 52/72 27 31
+
+

