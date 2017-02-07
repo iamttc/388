@@ -28,9 +28,18 @@ int main() {
  
   while(1){
     sprintf(str, "%d%d%d%d", rand(), rand(), rand(), rand()); //Generate some big random numbers
+
     MD5(str, strlen(str), result);
     //To test
     //unsigned char result[MD5_DIGEST_LENGTH] = {0x5f, 0x4d, 0xcc, 0x3b, 0x5a, 0xa7, 0x65, 0xd6, 0x27, 0x27, 0x27, 0x27, 0x4f, 0x52, 0x27, 0x31};
+
+    //printf("Tries: %llu\n", num);
+    //printf("Password: ");
+    //printf(str);
+    //printf("\nHashed pass: ");
+    //for(int i = 0; i < MD5_DIGEST_LENGTH; i++)
+    //  printf("%02x", result[i]);//
+    //printf("\n");
 
     counter = 0;
     for(int i = 0; i < MD5_DIGEST_LENGTH; i++){
@@ -61,7 +70,10 @@ int main() {
            result[i+1] == 0x34 || result[i+1] == 0x35 || result[i+1] == 0x36 ||
            result[i+1] == 0x37 || result[i+1] == 0x38 || result[i+1] == 0x39){
 
-          printf("%llu\n", num);
+          printf("Tries: %llu\n", num);
+          printf("Password: ");
+          printf(str);
+          printf("\nHashed pass: ");
           for(int i = 0; i < MD5_DIGEST_LENGTH; i++)
             printf("%02x", result[i]);//
           printf("\n");
