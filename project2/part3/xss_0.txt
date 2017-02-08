@@ -1,1 +1,2 @@
 <script>$(document).ready(function(){location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()})</script>
+#need to add the nevessary url params to this
