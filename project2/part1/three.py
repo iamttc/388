@@ -1,21 +1,30 @@
 import hashlib
-import itertools
+import sys
+from random import randint
+
+# generate random password
+def rand():
+    return str(randint(0, sys.maxint))
+def get_pass():
+    return rand() + rand() + rand() + rand()
 
 def get_hash():
-    start = '27204f52203123'
-    counter = 0
+    # ['or', 'Or','OR', 'oR', '||']
+    start = ['276f7227','274f7227','274f5227','276f5227','277c7c27']
+    possibly = []
+
+    # followed by 1:9
+    for sub in start:
+        for i in range(31,40):
+            possibly.append(sub + str(i))
 
     while 1:
-        password = str(counter)
+        password = get_pass()
         passhash = hashlib.md5(password).hexdigest()
-
-        if start == passhash[:14]:
-            print password
-            print passhash
-            print passhash.decode('hex')
-            return
-
-        counter += 1
+        if any(sub in passhash for sub in start):
+            if any(sub in passhash for sub in possibly):
+                print(password + ' : ' + passhash)
+                return
 
 get_hash()
 
