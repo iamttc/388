@@ -1,1 +1,9 @@
 #So we can't use ; ' or "
+
+#we could use backticks
+`
+
+#also this works without the "" around alert, not sure if thats useful
+<IFRAME SRC=# onload=alert(0)></IFRAME>
+
+<IFRAME SRC=# onload=$(document).ready(alert(0))></IFRAME>
