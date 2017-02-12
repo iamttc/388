@@ -1,0 +1,12 @@
+Security Recommendations
+
+### SQL Injection ###
+
+
+### CSRF ###
+
+
+### XSS ###
+
+
+

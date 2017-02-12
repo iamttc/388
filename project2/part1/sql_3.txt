@@ -1,8 +1,0 @@
-(a) The name of the database
-(b) The version of the SQL server
-(c) All of the names of the tables in the database 
-(d) A secret string hidden in the database 
-"SELECT DISTINCT query FROM history WHERE user_id = %s ORDER BY id DESC LIMIT 15"
-
-
-
