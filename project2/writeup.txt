@@ -2,9 +2,37 @@ Security Recommendations
 
 ### SQL Injection ###
 
+*SQL injection vulnerabilities occur when developers allow data
+ to be executed as code
+
+*Parametrized queries. This allows database to distinguish between code and data
+
+*Escape user supplied input, especially characters that are special/meaningful characters in the SQL language.
+ Sanitizing inputs makes it so that malicious data isn't interpreted as code
+
+*Pattern check the inputs and make sure the input fits the type that they are supposed to be
+ (ints are in int format, etc). Strings are a bit trickier but can still be pattern checked so that
+ they look like a date, etc
+
+*Secure the SQL database itself by limiting its permissions to only what is needed for the web application
+ (Ex: disable access to system tables)
+
+
 
 ### CSRF ###
 
+*Ensure that there are no XSS vulnerabilities, as if those are present then CSRF defense can be bypassed
+
+*Verify request is same origin. We need to determine the source origin of the request and the target origin of the request
+ For the source origin, we can check the referer or origin header (Possible that neither is present.. block?)
+ Make sure target (kinda hard to find) matches origin
+
+*CSRF token - unique to each session, large random value made with secure random number generator
+ Added as a hidden field for forms or within urls, server rejects requested action if token validation fails
+
+*double cookie?
+
+*Require user interaction again: re-authenticate, captcha, one time token
 
 ### XSS ###
 
