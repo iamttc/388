@@ -2,10 +2,10 @@ Security Recommendations
 
 ### SQL Injection ###
 
-SQL injection vulnerabilities occur when developers allow data to be executed as code, but this can be easily solved in a variety of simple ways.
+SQL injection vulnerabilities occur when developers allow data to be executed as code, but this can be easily solved in a variety of ways.
 The first thing that developers can do is use parametrized queries, which are prepared statements that separate the query string from
 the query parameter values. Due to the parameters being added separately, the parameter values can't modify or break the query string, thus
-protecting the query from a sql injection as the database can now distinguish between code and data. Additionally, one of the most important things
+protecting the query from a sql injection (the database can now distinguish between code and data). Additionally, one of the most important things
 for a developer to do is sanitize their inputs by escaping all user supplied parameter values. By escaping the special/meaningful characters of the SQL
 language, we can make sure that malicious data isn't interpreted as code. This can be done manually, but usually there are high level functions provided to
 the developer that they can take advantage of and easily secure their database. As a last security measure, 
@@ -18,26 +18,26 @@ down on the variety of SQL queries that will even be allowed to execute and prev
 When a developer is securing their web application against CSRF, the most important thing for them to do is ensure
 that there are no XSS vulnerabilites present in their system, as those can be used to bypass CSRF defenses.
 Once this is done, developers need to verify that requests are coming from the same origin that they are targetting.
-By looking at the standard headers (origin, referer and host) and confirming that the source origin is the same as the target origin,
+By looking at the standard headers (origin, referer, and host) and confirming that the source origin is the same as the target origin,
 we can disables requests coming in that are cross origin and possibly malicious. Although it is possible to forge these headers using Javascript, if we have
 secured against XSS then this will not be an issue. In addition to verifying that requests are same origin, we can add a CSRF token
 to urls or forms (as a hidden input) to make it more difficult to fake a request from a user, as the server will reject
 the requested action if the token validation fails. This CSRF token should be unique to each session and should be a large 
-random value made with a secure random number generator. An alternative to this sort of user verification, we can 
-alteratively require more user interaction such as making them re-authenticate, having them fill out a captcha or typing in a one time token
+random value made with a secure random number generator. As an alternative to this sort of user verification, we can 
+require more user interaction such as making them re-authenticate, having them fill out a captcha, or typing in a one time token
 that we have sent them.
 
 ### XSS ###
 
 There are multiple methods to prevent Cross Site Scripting attacks. The first is to use Content-Security-Headers 
-in HTML5 sites. These headers allow the developer to control what types of dynamic content are allowed to load.
-You can control tags and sources which are allowed to load in the site. Secondly, to keep session data private,
+in HTML5 sites. These headers allow the developer to control what types of dynamic content are allowed to load,
+such as specific tags and sources. Secondly, to keep session data private,
 the developer should allow site access only via HTTPS and turn on the HTTPSOnly cookie flag. This ensures the
-browser only serves cookies over HTTPS. Another method to reduce XSS attacks is to sanitize the input string when 
+browser only serves cookies over HTTPS, and thus they are encryptes. Another method to reduce XSS attacks is to sanitize the input string when 
 rendering the dynamic content. There are multiple methods to achieve this. Many modern front-end and back-end 
 frameworks have built-in functions to remove potentially harmful content, such as Jinja2 templating engine which 
 has an 'autoescape' keyword. Sites should also try not to rely on client written HTML and use a different 
-formatting language such as Markdown instead. Markdown utilizes a different syntax, allowing the developer 
+formatting language such as Markdown. Markdown utilizes a different syntax, allowing the developer 
 to safely insert HTML using a Markdown renderer. All harmful HTML tags can safely be removed without loss of
 formatting possibilities. As a last resort, the developer could eliminate all HTML entities and tags received 
 as input. This, however, could restrict client generated content. 
