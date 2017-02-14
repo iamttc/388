@@ -36,5 +36,18 @@ Security Recommendations
 
 ### XSS ###
 
+* Eliminate all html entities and tags (last resort)
 
+* Don't render input for front end applications. HTML tags may not work.
+
+* Escape strings on input display. Usually frameworks have built in methods to sanitize. Always sanitize when displaying 
+from the database, not after, because some databases can truncate input and already invalidate html
+
+* Use autoescape in templates
+
+* Avoid relying on HTML input. Use other formatting languages such as markdown.
+
+* Try to keep cookies safe, such as only allowing users to access your site of HTTPS
+
+* Use Content-Security-Headers in HTML5
 
