@@ -29,18 +29,16 @@ that we have sent them.
 
 ### XSS ###
 
-* Eliminate all html entities and tags (last resort)
-
-* Don't render input for front end applications. HTML tags may not work.
-
-* Escape strings on input display. Usually frameworks have built in methods to sanitize. Always sanitize when displaying 
-from the database, not after, because some databases can truncate input and already invalidate html
-
-* Use autoescape in templates
-
-* Avoid relying on HTML input. Use other formatting languages such as markdown.
-
-* Try to keep cookies safe, such as only allowing users to access your site of HTTPS
-
-* Use Content-Security-Headers in HTML5
+There are multiple methods to prevent Cross Site Scripting attacks. The first is to use Content-Security-Headers 
+in HTML5 sites. These headers allow the developer to control what types of dynamic content are allowed to load.
+You can control tags and sources which are allowed to load in the site. Secondly, to keep session data private,
+the developer should allow site access only via HTTPS and turn on the HTTPSOnly cookie flag. This ensures the
+browser only serves cookies over HTTPS. Another method to reduce XSS attacks is to sanitize the input string when 
+rendering the dynamic content. There are multiple methods to achieve this. Many modern front-end and back-end 
+frameworks have built-in functions to remove potentially harmful content, such as Jinja2 templating engine which 
+has an 'autoescape' keyword. Sites should also try not to rely on client written HTML and use a different 
+formatting language such as Markdown instead. Markdown utilizes a different syntax, allowing the developer 
+to safely insert HTML using a Markdown renderer. All harmful HTML tags can safely be removed without loss of
+formatting possibilities. As a last resort, the developer could eliminate all HTML entities and tags received 
+as input. This, however, could restrict client generated content. 
 

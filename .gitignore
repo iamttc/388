@@ -3,3 +3,5 @@
 388notes*
 *.pyc
 /venv/
+*.swp
+
