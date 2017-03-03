@@ -47,12 +47,23 @@ Probably a small private network, perhaps someones apartment or home.
 # Question 3
 
 3a.
+Starts on frame 14602 or type "ftp" into the filter bar
 
 3b.
+http://slacksite.com/other/ftp.html
+
+Its active
+
+filter by ftp.active.cip
+packed 16546 open up FTP -> PORT it says active
 
 3c.
+Anonymous logins?
+Packets not secure, username (laticia.langhans) and password (goblue3859) 
+exposed?? Looks like the login failed though
 
 3d.
+SFTP and FTPS
 
 # Question 4
 
