@@ -133,10 +133,13 @@ Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
 # Question 5
 
 5a.
+filter: tcp.port == 443 and ip.src_host contains "facebook" or ip.dst_host contains "facebook"
 
 5b.
 
 5c.
 
 5d.
+
+Accessed the graph API?
 
