@@ -1,10 +1,48 @@
 # Question 1
 
 1.
+https://en.wikipedia.org/wiki/IP_address#Private_addresses
+10.0.0.0 -> 10.255.255.255  16777216 addresses
+172.16.0.0 -> 172.31.255.255  1048576 addresses
+192.168.0.0 -> 192.168.255.255  65536 addresses
+
+tshark -T fields -e ip.src -r 388-proj3.pcap | sort | uniq
+
+10.0.2.1
+10.0.2.2
+10.0.2.3
+
+no 172.16's
+
+no 192.168's
+
+https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing
+tshark -T fields -e ip.src -e eth.addr -Y "ip.src == 10.0.0.0/8" -r 388-proj3.pcap | sort | uniq
+
+IP        MAC
+10.0.2.1	04:0c:ce:d8:0f:fa,00:26:08:e5:66:07
+10.0.2.1	8c:a9:82:50:f0:a6,00:26:08:e5:66:07
+10.0.2.1	ff:ff:ff:ff:ff:ff,00:26:08:e5:66:07
+10.0.2.2	00:26:08:e5:66:07,04:0c:ce:d8:0f:fa
+10.0.2.2	01:00:5e:00:00:fb,04:0c:ce:d8:0f:fa
+10.0.2.2	ff:ff:ff:ff:ff:ff,04:0c:ce:d8:0f:fa
+10.0.2.3	00:26:08:e5:66:07,8c:a9:82:50:f0:a6
+10.0.2.3	01:00:5e:00:00:fb,8c:a9:82:50:f0:a6
+10.0.2.3	01:00:5e:00:00:fc,8c:a9:82:50:f0:a6
+10.0.2.3	01:00:5e:7f:ff:fa,8c:a9:82:50:f0:a6
+10.0.2.3	ff:ff:ff:ff:ff:ff,8c:a9:82:50:f0:a6
+
+
 
 # Question 2
 
 2.
+@838 piazza
+
+We have 11 mac addresses so 11 devices
+
+Probably a small private network, perhaps someones apartment or home.
+
 
 # Question 3
 
