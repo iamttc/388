@@ -49,6 +49,10 @@ Probably a small private network, perhaps someones apartment or home.
 3a.
 Starts on frame 14602 or type "ftp" into the filter bar
 
+Preferences -> name resolution for IP
+
+dl.xs4all.nl
+
 3b.
 http://slacksite.com/other/ftp.html
 
