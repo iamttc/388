@@ -1,0 +1,7 @@
+
+BSSID, First time seen, Last time seen, channel, Speed, Privacy, Cipher, Authentication, Power, # beacons, # IV, LAN IP, ID-length, ESSID, Key
+14:35:8B:07:CC:50, 2017-02-11 13:07:18, 2017-02-11 13:45:47,  6,  54, WPA2, CCMP,PSK, -27,    21150,      812,   0.  0.  0.  0,  16, SuperDuperSketchyCorp_388, 
+
+Station MAC, First time seen, Last time seen, Power, # packets, BSSID, Probed ESSIDs
+9C:B6:D0:D2:67:1D, 2017-02-11 13:07:34, 2017-02-11 13:28:33, -30,      812, 14:35:8B:07:CC:50,SuperDuperSketchyCorp_388
+
