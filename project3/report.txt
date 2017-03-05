@@ -1,0 +1,31 @@
+# Overview
+
+The purpose of the pen test is to test the security of the SuperDuperSketchyCorp
+network. We want to discover vulnerabilities that will help us better understand
+how attackers would exploit it, and thus help SuperDuperSketchyCorp protect their
+assets and data.
+
+# Methodology
+
+
+# Findings
+
+During our pen test, we were able to discover the following information:
+
+Hostnames:
+
+
+Encryption Keys:
+
+Credentials:
+
+Secrets:
+
+Hostnames
+
+# Remediation
+
+We suggest SuperDuperSketchyCorp do the following in order to help improve the
+security of their network:
+
+
