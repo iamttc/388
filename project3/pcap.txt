@@ -134,6 +134,10 @@ Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
 
 5a.
 filter: tcp.port == 443 and ip.src_host contains "facebook" or ip.dst_host contains "facebook"
+Take out the 443 part and more stuff shows up..
+liking 
+aljazeera
+http://blog.erratasec.com/
 
 5b.
 
