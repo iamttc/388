@@ -1,0 +1,14 @@
+HELO email.superdupersketchycorp.com
+MAIL FROM:hirochri@email.superdupersketchycorp.com
+RCPT TO:helpdesk@email.superdupersketchycorp.com
+DATA
+From: hirochri@email.superdupersketchycorp.com
+To: helpdesk@email.superdupersketchycorp.com
+Date: Mon, 1 May 2006 10:23:00 +0000 (UTC)
+Reply-To: hirochri@umich.edu
+Subject: SEND HELP
+
+SEND HELP PLS
+
+.
+QUIT

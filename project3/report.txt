@@ -14,6 +14,9 @@ script to generate all 46656 possible passwords. Then we use aircrack-ng and the
 BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap 
 file to crack the password, which we found to be 'EECS388-1z4'.
 
+Used 'ipconfig getifaddr en1' to get our local ip address on the network, then scanned
+with 'nmap -v 192.168.0.166/24' to discover that 192.168.0.50 had port 22 open for ssh.
+
 # Findings
 
 During our pen test, we were able to discover the following information:
