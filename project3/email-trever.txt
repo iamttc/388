@@ -1,0 +1,15 @@
+HELO email.superdupersketchycorp.com
+MAIL FROM:iamttc@email.superdupersketchycorp.com
+RCPT TO:helpdesk@email.superdupersketchycorp.com
+DATA
+From: iamttc@email.superdupersketchycorp.com
+To: helpdesk@email.superdupersketchycorp.com
+Reply-To: iamttc@umich.edu
+Date: Sun, 05 Mar 2017 15:42:59 -0500
+Subject: password pls
+
+need pass lol
+
+
+.
+QUIT
