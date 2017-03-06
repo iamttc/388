@@ -10,14 +10,15 @@ assets and data.
 The first thing we did was look for a way to get onto the SuperDuperSketchyCorp Wifi
 based on the flier that was found in the BBB lobby. Since we knew the password
 had the format of 'EECS388-[0-9a-z][0-9a-z][0-9a-z]', we first wrote a small python
-script to generate all 46656 possible passwords. Then we use aircrack-ng and the 
-BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap 
+script to generate all 46656 possible passwords. Then we use aircrack-ng and the
+BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap
 file to crack the password, which we found to be 'EECS388-1z4'.
 
-Used 'ipconfig getifaddr en1' to get our local ip address on the network, then scanned
-with 'nmap -v 192.168.0.166/24 -p 22' to discover that 192.168.0.23 had port 22 open for ssh.
+Used 'ipconfig getifaddr en0' to get our local ip address on the network, then scanned
+with 'nmap 192.168.0.166/24 -p 22' to discover that 192.168.0.23 had port 22 open for ssh.
 
-Found that we can ssh into superdupersketchycorp.com using port 47923
+After connecting to the network and reading Welcome.txt, we found that we can ssh
+into superdupersketchycorp.com using port 47923 while on MWireless.
 
 # Findings
 
