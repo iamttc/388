@@ -13,62 +13,20 @@ had the format of 'EECS388-[0-9a-z][0-9a-z][0-9a-z]', we first wrote a small pyt
 script to generate all 46656 possible passwords. Then we use aircrack-ng and the
 BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap
 file to crack the password. Using this password, we logged onto the SDSC wifi 
-network and scanned the entire local network for machines that had open ssh ports. Once we found one,
-we knew that we could log in using our uniqname if we could get ou
+network and used nmap to scan the entire local network for machines that had open ssh ports. Once we found one,
+we knew that we could log in using our uniqname if we could get our password.
+Thus we used the flier we found in the BBB to spoof an email to the helpdesk, making sure that
+our umich email was in the Reply-To field, and thus the helpdesk emailed us our
+passwords for the server. After logging onto the server, we used nmap to scan all the
+ports that the server had open, and discoverd it also had port 80 open, implying 
+this server was hosting a website. This was confirmed by us reading the welcome.txt
+file, which revealed to us that there was a backdoor we could use to ssh into the server using 
+superdupersketchycorp.com and the secret port 47923.
 
-Wifi password: EECS388-1z4
-
-Used 'ipconfig getifaddr en0' to get our local ip address on the network, then scanned
-with 'nmap 192.168.0.166/24 -p 22' to discover that 192.168.0.23 had port 22 open for ssh.
-
-After connecting to the server using the above ip and reading Welcome.txt, we found that we can ssh
-into superdupersketchycorp.com using port 47923 while on MWireless.
-
-Starting Nmap 7.01 ( https://nmap.org ) at 2017-03-06 20:36 EST
-Nmap scan report for localhost (127.0.0.1)
-Host is up (0.00037s latency).
-Not shown: 999 closed ports
-PORT   STATE SERVICE
-80/tcp open  http
-
-Website!
+spoof, login to server, nmap get http port and see in welcome.txt that there is a website
+Sniff traffic, GET request to /admin/, find authorization, logon to admin part of website
 
 
-tcpdump -i wlx00c0ca852fce -w traffic.pcap
-
-To sniff traffic -> GET request to /admin/
-
-Authorization credentials in plaintext....
-
-    GET /admin/ HTTP/1.1\r\n
-    User-Agent: Wget/1.16 (linux-gnueabihf)\r\n
-    Accept: */*\r\n
-    Host: 192.168.0.23\r\n
-    Connection: Keep-Alive\r\n
-    Authorization: Basic bWF0dGxleTozODhyb3hteXNvY2tz\r\n
-        Credentials: mattley:388roxmysocks
-    \r\n
-    [Full request URI: http://192.168.0.23/admin/]
-    [HTTP request 2/2]
-    [Response in frame: 835]
-
-Found:
-
-~~html~~~
-Announcements
-
-Layoffs are coming!
-
-Just letting the exec's know, we'll be laying off 30% of the workforce come March. Be sure not to tell the employees until it's time. If this got out, our quarterly projections would drop.
-
-Remote Office Work now possible
-
-We're setting up a remote office in the Bob and Betty Beyster building at the University of Michigan.
-
-The password to the executive lounge has changed.
-
-Please use 'h4ppie8rthDay'.
-~~~~~~~~~~~
 
 
 # Findings
@@ -76,17 +34,23 @@ Please use 'h4ppie8rthDay'.
 During our pen test, we were able to discover the following information:
 
 Hostnames: (Hostname port pairs)
+*The server has the IP of 192.168.0.23 on the local network and has 
+ port 22 open for ssh and port 80 open for serving http traffic. This 
+ same server has a hostname of superdupersketchycorp.com (141.212.108.247), 
+ which we can access via ssh using any Wifi if we use port 47923.
 
 
 Encryption Keys:
-@863 The password is technically the key for encrypting the traffic over the network so I'd say you're on to something ;) 
+*The Wifi password (technically key for encrypting the traffic over the network) is EECS388-1z4
 
 Credentials: (Username password pairs)
+*There is an admin with the username: mattley and the password: 388roxmysocks
 
 Secrets:
-@864 Keep poking! Is there perhaps another purpose for the server? (hint check your port scan for interesting ports open on the SDSC machine)
+*30% of the workforce will be layed off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
+*There is a remote office in the BBB now enabling remote work
+*The password to the executive lounge has changed and is now: h4ppie8rthDay
 
-Hostnames
 (Username and password pairs count as one finding, as do port and hostname pairs, and any collection of secrets found in one file or web page.)
 
 # Remediation
