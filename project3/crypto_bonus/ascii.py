@@ -10,3 +10,4 @@ file2 = binascii.hexlify(open(sys.argv[2], 'rb').read()).decode('hex')
 file3 = xor(file1, file2).encode('hex')
 
 open(sys.argv[3], 'wb').write(file3)
+

@@ -12,17 +12,17 @@ based on the flier that was found in the BBB lobby. Since we knew the password
 had the format of 'EECS388-[0-9a-z][0-9a-z][0-9a-z]', we first wrote a small python
 script to generate all 46656 possible passwords. Then we use aircrack-ng and the
 BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap
-file to crack the password. Using this password, we logged onto the SDSC wifi 
+file to crack the password. Using this password, we logged onto the SDSC wifi
 network and used nmap to scan the entire local network for machines that had open ssh ports. Once we found one,
 we knew that we could log in using our uniqname if we could get our password.
 Thus we used the flier we found in the BBB to spoof an email to the helpdesk, making sure that
 our umich email was in the Reply-To field, and thus the helpdesk emailed us our
 passwords for the server. After logging onto the server, we used nmap to scan all the
-ports that the server had open, and discoverd it also had port 80 open, implying 
+ports that the server had open, and discoverd it also had port 80 open, implying
 this server was hosting a website. This was confirmed by us reading the welcome.txt
-file, which revealed to us that there was a backdoor we could use to ssh into the server using 
+file, which revealed to us that there was a backdoor we could use to ssh into the server using
 superdupersketchycorp.com and the secret port 47923. We visited the website and clicked through
-all the great links that SDSC had for us, and found an admin page that we didn't have the 
+all the great links that SDSC had for us, and found an admin page that we didn't have the
 credentials to log on to. Later however, when we used tcpdump to sniff the local network traffic,
 we found GET requests to /admin/ with an unencrypted admin username and password! We took this
 information and then logged onto the admin page, which revealed some secrets that were to be kept
@@ -33,9 +33,9 @@ from employees.
 During our pen test, we were able to discover the following information:
 
 Hostnames: (Hostname port pairs)
-*The server has the IP of 192.168.0.23 on the local network and has 
- port 22 open for ssh and port 80 open for serving http traffic. This 
- same server has a hostname of superdupersketchycorp.com (141.212.108.247), 
+*The server has the IP of 192.168.0.23 on the local network and has
+ port 22 open for ssh and port 80 open for serving http traffic. This
+ same server has a hostname of superdupersketchycorp.com (141.212.108.247),
  which we can access via ssh using any Wifi if we use port 47923.
 
 
@@ -45,12 +45,17 @@ Encryption Keys:
 Credentials:          Username      Password
 *Admin credentials    mattley       388roxmysocks
 *Our credentials      hirochri      Waqm9KJ
-                      iamttc 
+                      iamttc
 
 Secrets:
 *30% of the workforce will be layed off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
 *There is a remote office in the BBB now enabling remote work
 *The password to the executive lounge has changed and is now: h4ppie8rthDay
+
+Bob's Secret:
+Bob, thank you for trusting me with your secret. I'll keep your amazing sax skills private, I love you and promise not to share this video https://youtu.com/
+
+Alice, please don't tell anyone about our meeting today. I don't want anyone to learn my secret, it would ruin me. I love to play the saxophone but I am reb
 
 # Remediation
 
@@ -63,7 +68,7 @@ security of their network:
 *Fix helpdesk email service so that only employees can receive the helpdesk reply email
  and take additionally measures in securely getting locked out users new passwords (as
  mailing them their current password in plaintext is awful). In addition to that, perhaps
- avoid leaving semi-confidential documents in the BBB that allow random people to 
+ avoid leaving semi-confidential documents in the BBB that allow random people to
  attempt to get onto your wifi and spoof emails to your helpdesk.
 
 
