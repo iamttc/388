@@ -1,0 +1,9 @@
+Alice:  Bob, I encrypted a secret message to you with our secret Pad and titled the message as EncryptedMsg1.
+
+Bob:    Awesome! I used the same pad to reply, my encrypted message is in the file named EncryptedMsg2.
+
+Alice:  Do you think the name One Time Pad means something?
+
+Bob:    Nah, I think we're fine if we only used it to encrypt our two messages. No one else knows the pad!
+
+Alice:  Perfect :)
