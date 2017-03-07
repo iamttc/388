@@ -70,7 +70,7 @@ TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
 
 filter: tcp.port == 443 and ip.src_host contains "facebook" or ip.dst_host contains "facebook"
 Take out the 443 part and more stuff shows up..
-liking 
+liking
 aljazeera
 http://blog.erratasec.com/
 
