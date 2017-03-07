@@ -12,7 +12,7 @@
 
 3b. Active
 
-3c. FTP doesn't encrypt traffic and thus everything that is transmitted is in plaintext. Using Wireshark, we were able to figure out a username (laticia.langhans) and a password (goblue3859) 
+3c. FTP doesn't encrypt traffic and thus everything that is transmitted is in plaintext. Using Wireshark, we were able to figure out a username (laticia.langhans) and a password (goblue3859)
 
 3d. SSH File Transfer Protocol (SFTP) and File Transfer Protocol Secure (FTPS)
 
@@ -66,22 +66,10 @@ TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
 
 # Question 5
 
-5a. 
+5a. After the user successfully logs in, Facebook authenticates plugins using an api key that is visible in all HTTP Get requests. In this case, we can see the variable api_key=116663708370869 passed as a search parameter in the URL.
 
-filter: tcp.port == 443 and ip.src_host contains "facebook" or ip.dst_host contains "facebook"
-Take out the 443 part and more stuff shows up..
-liking
-aljazeera
-http://blog.erratasec.com/
+5b. An attacker could monitor network traffic and see when a user logs in, then use their api key to authenticate with Facebook's api as if they were the user. From the requests we see, the attacker now has access to the like, likebox, and activity api.
 
-5b. An attacker could monitor network traffic and see when a user logs in,
-then take their session ticket and 
+5c. Since the user is already authenticated with Facebook's server, they could transmit the api requests over HTTPS. This would hide the api key from attackers and prevent them from liking or sharing items on their behalf.
 
-5c.
-
-5d.
-
-Accessed the graph API?
-aljazeera
-http://blog.erratasec.com/
-
+5d. While on Facebook, the user first reads a blog post about the legality of "wifi sniffing" on blog.erratasec.com. The user then goes back to the homepage and logs in. Finally, (s)he read an article about Venezuela's re-election of Hugo Chavez on aljazeera.com and likes and recommends it on Facebook.
