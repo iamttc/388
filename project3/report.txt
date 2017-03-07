@@ -21,13 +21,12 @@ passwords for the server. After logging onto the server, we used nmap to scan al
 ports that the server had open, and discoverd it also had port 80 open, implying 
 this server was hosting a website. This was confirmed by us reading the welcome.txt
 file, which revealed to us that there was a backdoor we could use to ssh into the server using 
-superdupersketchycorp.com and the secret port 47923.
-
-spoof, login to server, nmap get http port and see in welcome.txt that there is a website
-Sniff traffic, GET request to /admin/, find authorization, logon to admin part of website
-
-
-
+superdupersketchycorp.com and the secret port 47923. We visited the website and clicked through
+all the great links that SDSC had for us, and found an admin page that we didn't have the 
+credentials to log on to. Later however, when we used tcpdump to sniff the local network traffic,
+we found GET requests to /admin/ with an unencrypted admin username and password! We took this
+information and then logged onto the admin page, which revealed some secrets that were to be kept
+from employees.
 
 # Findings
 
@@ -50,8 +49,6 @@ Secrets:
 *30% of the workforce will be layed off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
 *There is a remote office in the BBB now enabling remote work
 *The password to the executive lounge has changed and is now: h4ppie8rthDay
-
-(Username and password pairs count as one finding, as do port and hostname pairs, and any collection of secrets found in one file or web page.)
 
 # Remediation
 
