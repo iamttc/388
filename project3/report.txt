@@ -42,8 +42,7 @@ Hostnames: (Hostname port pairs)
 Encryption Keys:
 *The Wifi password (technically key for encrypting the traffic over the network) is EECS388-1z4
 
-Credentials: (Username password pairs)
-                      Username      Password
+Credentials:          Username      Password
 *Admin credentials    mattley       388roxmysocks
 *Our credentials      hirochri      Waqm9KJ
                       iamttc 
@@ -57,5 +56,15 @@ Secrets:
 
 We suggest SuperDuperSketchyCorp do the following in order to help improve the
 security of their network:
+
+*Immediately changing all of their user/admin passwords and additionally changing the
+ wifi password to something much longer and more timeconsuming to crack.
+
+*Fix helpdesk email service so that only employees can receive the helpdesk reply email
+ and take additionally measures in securely getting locked out users new passwords (as
+ mailing them their current password in plaintext is awful). In addition to that, perhaps
+ avoid leaving semi-confidential documents in the BBB that allow random people to 
+ attempt to get onto your wifi and spoof emails to your helpdesk.
+
 
 
