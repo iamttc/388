@@ -43,7 +43,10 @@ Encryption Keys:
 *The Wifi password (technically key for encrypting the traffic over the network) is EECS388-1z4
 
 Credentials: (Username password pairs)
-*There is an admin with the username: mattley and the password: 388roxmysocks
+                      Username      Password
+*Admin credentials    mattley       388roxmysocks
+*Our credentials      hirochri      Waqm9KJ
+                      iamttc 
 
 Secrets:
 *30% of the workforce will be layed off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
