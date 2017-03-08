@@ -1,6 +1,6 @@
 # Question 1
 
-1. All of the devices on the local network listed as [MAC - IP]: [04:0c:ce:d8:0f:fa,00:26:08:e5:66:07 - 10.0.2.1], [8c:a9:82:50:f0:a6,00:26:08:e5:66:07 - 10.0.2.1], [ff:ff:ff:ff:ff:ff,00:26:08:e5:66:07 - 10.0.2.1], [00:26:08:e5:66:07,04:0c:ce:d8:0f:fa - 10.0.2.2], [01:00:5e:00:00:fb,04:0c:ce:d8:0f:fa - 10.0.2.2], [ff:ff:ff:ff:ff:ff,04:0c:ce:d8:0f:fa - 10.0.2.2], [00:26:08:e5:66:07,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:00:00:fb,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:00:00:fc,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:7f:ff:fa,8c:a9:82:50:f0:a6 - 10.0.2.3], [ff:ff:ff:ff:ff:ff,8c:a9:82:50:f0:a6 - 10.0.2.3]
+1. All of the 11 devices on the local network listed as [MAC - IP]: [04:0c:ce:d8:0f:fa,00:26:08:e5:66:07 - 10.0.2.1], [8c:a9:82:50:f0:a6,00:26:08:e5:66:07 - 10.0.2.1], [ff:ff:ff:ff:ff:ff,00:26:08:e5:66:07 - 10.0.2.1], [00:26:08:e5:66:07,04:0c:ce:d8:0f:fa - 10.0.2.2], [01:00:5e:00:00:fb,04:0c:ce:d8:0f:fa - 10.0.2.2], [ff:ff:ff:ff:ff:ff,04:0c:ce:d8:0f:fa - 10.0.2.2], [00:26:08:e5:66:07,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:00:00:fb,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:00:00:fc,8c:a9:82:50:f0:a6 - 10.0.2.3], [01:00:5e:7f:ff:fa,8c:a9:82:50:f0:a6 - 10.0.2.3], [ff:ff:ff:ff:ff:ff,8c:a9:82:50:f0:a6 - 10.0.2.3]
 
 # Question 2
 
@@ -12,7 +12,7 @@
 
 3b. Active
 
-3c. FTP doesn't encrypt traffic and thus everything that is transmitted is in plaintext. Using Wireshark, we were able to figure out a username (laticia.langhans) and a password (goblue3859)
+3c. FTP doesn't encrypt its packets and thus everything that is transmitted is in plaintext, meaning that sniffing network traffic gives up all the details about what happened and which users used FTP. Using Wireshark, we were able to figure out a username (laticia.langhans) and a password (goblue3859) because of this, which is a huge vulnerability!
 
 3d. SSH File Transfer Protocol (SFTP) and File Transfer Protocol Secure (FTPS)
 
