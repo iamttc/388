@@ -56,9 +56,15 @@ Secrets:
 *30% of the workforce will be layed off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
 *There is a remote office in the BBB now enabling remote work
 *The password to the executive lounge has changed and is now: h4ppie8rthDay
+
+Extra Credit:
 *We uncovered Alice and Bob's encrypted messages to each other, and because they had both used the same one time pad, we 
  were able to use crib dragging to uncover their messages (shown below). We thus know that plays the saxophone and is
  possibly also Gandalf.. or just loves making long repetitive videos where he plays the sax to Gandalf's beautiful face!
+ Unfortunately for Bob, the video that Alice promised not to share has somehow
+ ended up on the SDSC website in the information link under the About Us tab.. oops!
+
+
 Alice's message: Bob, thank you for trusting me with your secret. 
                  I'll keep your amazing sax skills private, I love 
                  you and promise not to share this video 
@@ -82,6 +88,8 @@ security of their network:
  mailing them their current password in plaintext is awful). In addition to that, perhaps
  avoid leaving semi-confidential documents in the BBB that allow random people to
  attempt to get onto your wifi and spoof emails to your helpdesk.
+
+*Don't reuse one time pads for actually secret information, as
 
 
 
