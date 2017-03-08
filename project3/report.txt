@@ -29,7 +29,9 @@ Secrets:
 * 30% of the workforce will be laid off in March... If this news gets to the employees, SDSC's quarterly projections will drop.
 * There is a remote office in the BBB now enabling remote work
 * The password to the executive lounge has changed and is now: h4ppie8rthDay
-* We uncovered Alice and Bob's encrypted messages to each other, and because they had both used the same one time pad, we were able to use crib dragging to uncover their messages (shown below). We thus know that plays the saxophone and is possibly also Gandalf.. or just loves making long repetitive videos where he plays the sax to Gandalf' beautiful face!
+
+Extra Credit:
+* We uncovered Alice and Bob's encrypted messages to each other, and because they had both used the same one time pad, we  were able to use crib dragging to uncover their messages (shown below). We thus know that plays the saxophone and is possibly also Gandalf.. or just loves making long repetitive videos where he plays the sax to Gandalf's beautiful face! Unfortunately for Bob, the video that Alice promised not to share has somehow ended up on the SDSC website in the information link under the About Us tab.. oops!
 
 Alice's message: Bob, thank you for trusting me with your secret. I'll keep your amazing sax skills private, I love you and promise not to share this video https://youtu.be/Sagg08DrO5U!
 Bob's message: Alice, please don't tell anyone about our meeting today. I don't want anyone to learn my secret, it would ruin me. I love to play the saxophone but I am so embarrassed!
@@ -39,6 +41,7 @@ Bob's message: Alice, please don't tell anyone about our meeting today. I don't 
 We suggest SuperDuperSketchyCorp do the following in order to help improve the security of their network:
 * Immediately changing all of their user/admin passwords and additionally changing the wifi password to something much longer and more time consuming to crack.
 * Fix help desk email service so that only employees can receive the help desk reply email and take additionally measures in securely getting locked out users new passwords (as mailing them their current password in plaintext is awful). In addition to that, perhaps avoid leaving semi-confidential documents in the BBB that allow random people to attempt to get onto your wifi and spoof emails to your help desk.
-
-
+* Don't reuse one time pads for actually secret information, as this could lead to information leaks, such as Alice and Bob's conversation.
+* Use cookies when for login information so admin (or any other) login credentials can't be found when monitoring the network.
+* Communicate over HTTPS so eavesdroppers can't discover secret information in packets.
 
