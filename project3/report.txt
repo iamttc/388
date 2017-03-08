@@ -6,16 +6,16 @@ The purpose of the pen test is to test the security of the SuperDuperSketchyCorp
 
 The first thing we did was look for a way to get onto the SuperDuperSketchyCorp Wifi based on the flier that was found in the BBB lobby. Since we knew the password had the format of 'EECS388-[0-9a-z][0-9a-z][0-9a-z]', we first wrote a small python script to generate all 46656 possible passwords. Then we use aircrack-ng and the BSSID of the SuperDuperSketchyCorp router along with this wordlist to and a pcap file to crack the password. Using this password, we logged onto the SDSC wifi network and used nmap to scan the entire local network for machines that had open ssh ports. Once we found one, we knew that we could log in using our uniqname if we could get our password.
 
-Next we used the flier we found in the BBB to spoof an email to the help desk, making sure that our umich email was in the Reply-To field, and thus the help desk emailed us our passwords for the server. After logging onto the server, we used nmap to scan all the ports that the server had open, and discoverd it also had port 80 open, implying this server was hosting a website. This was confirmed by us reading the welcome.txt file, which revealed to us that there was a backdoor we could use to ssh into the server using superdupersketchycorp.com and the secret port 47923.
+Next we used the flier we found in the BBB and netcat to spoof an email to the help desk, making sure that our umich email was in the Reply-To field, and thus the help desk emailed us our passwords for the server. After logging onto the server, we used nmap to scan all the ports that the server had open, and discoverd it also had port 80 open, implying this server was hosting a website. This was confirmed by us reading the welcome.txt file, which revealed to us that there was a backdoor we could use to ssh into the server using superdupersketchycorp.com and the secret port 47923.
 
-We visited the website and clicked through all the great links that SDSC had for us, and found an admin page that we didn't have the credentials to log on to. Later however, when we used tcpdump to sniff the local network traffic, we found GET requests to /admin/ with an unencrypted admin username and password! We took this information and then logged onto the admin page, which revealed some secrets that were to be kept from employees, which we have included below along with all our other findings.
+We visited the website and clicked through all the great links that SDSC had for us, and found an admin page that we didn't have the credentials to log on to. Later however, when we used tcpdump to sniff the local network traffic, we found GET requests to /admin/ with an unencrypted admin username and password! We took this information and then logged onto the admin page, which revealed some secrets that were to be kept from employees. We have included these secrets below, along with all of the other things that we found while conducting the penetration test..
 
 # Findings
 
 During our pen test, we were able to discover the following information:
 
-Hostnames: (Hostname port pairs)
-* The server has the IP of 192.168.0.23 on the local network and has port 22 open for ssh and port 80 open for serving http traffic. This same server has a hostname of superdupersketchycorp.com (141.212.108.247), which we can access via ssh using any Wifi if we use port 47923, and superdupersketchycorp.com is thus also the website that that server is hosting.
+Hostnames:
+* The server has the IP of 192.168.0.23 on the local network and has port 22 open for ssh and port 80 open for serving http traffic. This same server has a hostname of superdupersketchycorp.com (141.212.108.247), which we can access via ssh using any Wifi if we use port 47923, and additionally superdupersketchycorp.com is also the website that that server is hosting.
 
 Encryption Keys:
 * The Wifi password (technically key for encrypting the traffic over the network) is EECS388-1z4
@@ -32,7 +32,7 @@ Secrets:
 * In order to gain access to the SuperDuperSketchyCorp website, we found that there was a port 80 open on the local network, which indicated there was a website being hosted.
 
 Extra Credit:
-* We uncovered Alice and Bob's encrypted messages to each other, and because they had both used the same one time pad, we  were able to use crib dragging to uncover their messages (shown below). We thus know that plays the saxophone and is possibly also Gandalf.. or just loves making long repetitive videos where he plays the sax to Gandalf's beautiful face! Unfortunately for Bob, the video that Alice promised not to share has somehow ended up on the SDSC website in the information link under the About Us tab.. oops!
+* We uncovered Alice and Bob's encrypted messages to each other, and because they had both used the same one time pad, we were able to use crib dragging to uncover their messages (shown below). We thus know that Bob plays the saxophone and is possibly also Gandalf.. or just loves making long repetitive videos where he plays the sax to Gandalf's beautiful face! Unfortunately for Bob, the video that Alice promised not to share has somehow ended up on the SDSC website in the information link under the About Us tab.. oops!
 
 Alice's message: Bob, thank you for trusting me with your secret. I'll keep your amazing sax skills private, I love you and promise not to share this video https://youtu.be/Sagg08DrO5U!
 Bob's message: Alice, please don't tell anyone about our meeting today. I don't want anyone to learn my secret, it would ruin me. I love to play the saxophone but I am so embarrassed!
@@ -43,6 +43,6 @@ We suggest SuperDuperSketchyCorp do the following in order to help improve the s
 * Immediately changing all of their user/admin passwords and additionally changing the wifi password to something much longer and more time consuming to crack.
 * Fix help desk email service so that only employees can receive the help desk reply email and take additionally measures in securely getting locked out users new passwords (as mailing them their current password in plaintext is awful). In addition to that, perhaps avoid leaving semi-confidential documents in the BBB that allow random people to attempt to get onto your wifi and spoof emails to your help desk.
 * Don't reuse one time pads for actually secret information, as this could lead to information leaks, such as Alice and Bob's conversation.
-* Use cookies when for login information so admin (or any other) login credentials can't be found when monitoring the network.
+* Use cookies for login information so admin (or any other) login credentials can't be found when monitoring the network.
 * Communicate over HTTPS so eavesdroppers can't discover secret information in packets.
 
