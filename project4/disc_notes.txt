@@ -1,0 +1,49 @@
+Notes from discussion section
+
+6 tasks, 3 extra
+- overwrite vars, return address, shell code, ...
+
+cpu registers
+- eax specifically
+
+eip
+- instruction ptr
+
+esp
+- stack ptr
+
+fuzz testing
+- black box testing - unable to see the code you are testing
+- send a bunch of inputs and attempt to crash it
+- store this input and use it to theorize the vulnerability in the code
+
+buffer overflow defenses
+- DEP: certain segs of virt addr space declared non-executable
+- ASLR: addr space randomized
+- canaries: val before return address to check to see if it changed
+
+we need to learn gdb fook
+- start
+- b <name of function> (breakpt)
+- c (continue)
+- disassemble
+- print $REG
+- b *0x0000 (mem addr)
+- x32/wx 0x0000 (look at mem in stack)
+- next (line)
+- use AAAAAAAAAAAAAA (0x414141) to find where youre writing into the stack
+-- pay attention to endianness
+- look for mov command in calling function for return address
+- 8=D~
+- disassemble <function name tooo>
+
+** we always use little endian in this class
+
+python
+- from struct import pack
+- addr = pack("<I", 0xADDR) # <I is little endian
+- print('A'*32 + addr)
+
+python py.py | ./vuln
+./vulnArgs $(python py.py)
+
