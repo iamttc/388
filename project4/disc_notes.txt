@@ -29,7 +29,7 @@ we need to learn gdb fook
 - disassemble
 - print $REG
 - b *0x0000 (mem addr)
-- x32/wx 0x0000 (look at mem in stack)
+- x/32wx 0x0000 (look at mem in stack)
 - next (line)
 - use AAAAAAAAAAAAAA (0x414141) to find where youre writing into the stack
 -- pay attention to endianness
