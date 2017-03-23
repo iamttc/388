@@ -9,6 +9,7 @@ void vulnerable(char *arg)
 
 	strncpy(buf, arg, sizeof(buf) + 8);
 
+   //a = 4294967295;
 	*p = a;
 }
 
