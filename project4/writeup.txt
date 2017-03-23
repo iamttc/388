@@ -1,0 +1,16 @@
+T1
+
+Find address of input and then find difference with EBP.
+Fill those bytes + 8 with padding, and then the next 8 need to be 
+the new return address
+
+T2
+b vulnerable
+x/32wx &buf
+b on line after call
+x/32wx &buf to see how it worked
+
+calculate how many bytes for the shell (106), then use above^ to
+see how many bytes before return addr (59 bytes), and then
+add the return as &buf
+
