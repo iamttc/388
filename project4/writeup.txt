@@ -14,3 +14,17 @@ calculate how many bytes for the shell (106), then use above^ to
 see how many bytes before return addr (59 bytes), and then
 add the return as &buf
 
+
+T3
+
+b vuln
+b *0x080488bc
+
+buffer 2048 bytes (512 words)
+we can overwrite 2 more words (a and p)
+overwrite a with &buf
+overwrite pointer p (it holds the address of object its pointing to)
+with the address of the return (0x0bffefa9c, you can see it with x/2wx $ebp
+and x/wx 0x0bffefa9c). Thus we overflow to make p point to the return address
+and the overwrite the return address with &buf (start of shellcode) when
+the *p = a call happens
