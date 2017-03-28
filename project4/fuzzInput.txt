@@ -2716,3 +2716,397 @@ Unable to parse object
 Unable to parse object
 {"a":7.7e-02}
 Unable to parse object
+{"a":-64}
+Unable to parse_anything
+{"a":-069}
+Unable to parse_anything
+{"a":-571}
+Unable to parse_anything
+{"a":-63}
+Unable to parse_anything
+{"a":-0}
+Unable to parse_anything
+{"a":-0}
+Unable to parse_anything
+{"a":-5}
+Unable to parse_anything
+{"a":-03}
+Unable to parse_anything
+{"a":-93}
+Unable to parse_anything
+{"a":-299}
+Unable to parse_anything
+{"a":-2}
+Unable to parse_anything
+{"a":-903}
+Unable to parse_anything
+{"a":-938}
+Unable to parse_anything
+{"a":-05}
+Unable to parse_anything
+{"a":-8}
+Unable to parse_anything
+{"a":-1}
+Unable to parse_anything
+{"a":-136}
+Unable to parse_anything
+{"a":-260}
+Unable to parse_anything
+{"a":-5}
+Unable to parse_anything
+{"a":-1}
+Unable to parse_anything
+{"a":-1}
+Unable to parse_anything
+{"a":-46}
+Unable to parse_anything
+{"a":-166}
+Unable to parse_anything
+{"a":-8}
+Unable to parse_anything
+{"a":-96}
+Unable to parse_anything
+{"a":-365}
+Unable to parse_anything
+{"a":-3}
+Unable to parse_anything
+{"a":-178}
+Unable to parse_anything
+{"a":-66}
+Unable to parse_anything
+{"a":-4}
+Unable to parse_anything
+{"a":-6}
+Unable to parse_anything
+{"a":-106}
+Unable to parse_anything
+{"a":-78}
+Unable to parse_anything
+{"a":-2}
+Unable to parse_anything
+{"a":-1}
+Unable to parse_anything
+{"a":-168}
+Unable to parse_anything
+{"a":-6}
+Unable to parse_anything
+{"a":-73}
+Unable to parse_anything
+{"a":-17}
+Unable to parse_anything
+{"a":-75}
+Unable to parse_anything
+{"a":-266}
+Unable to parse_anything
+{"a":-445}
+Unable to parse_anything
+{"a":-0}
+Unable to parse_anything
+{"a":-206}
+Unable to parse_anything
+{"a":-82}
+Unable to parse_anything
+{"a":-000}
+Unable to parse_anything
+{"a":-901}
+Unable to parse_anything
+{"a":-8}
+Unable to parse_anything
+{"a":-61}
+Unable to parse_anything
+{"a":-687}
+Unable to parse_anything
+{"a":-0}
+Unable to parse_anything
+{"a":-1}
+Unable to parse_anything
+{"a":-05}
+Unable to parse_anything
+{"a":-588}
+Unable to parse_anything
+{"a":-238}
+Unable to parse_anything
+{"a":-11}
+Unable to parse_anything
+{"a":-355}
+Unable to parse_anything
+{"a":-3}
+Unable to parse_anything
+{"a":-8}
+Unable to parse_anything
+{"a":-6}
+Unable to parse_anything
+{"a":-16}
+Unable to parse_anything
+{"a":-15}
+Unable to parse_anything
+{"str":"\u\\\u12fd\/TLKE"}
+String doesn't end with a "
+{"str":"""\/\u12fd"KJ3A"}
+String doesn't end with a "
+{"str":"""\"\u"\\uBIQ2ZLPE"}
+String doesn't end with a "
+{"str":"\u"\u12fdDSBY"}
+String doesn't end with a "
+{"str":"\/\\\\\XX6ML4JXK"}
+String doesn't end with a "
+{"str":"\\u\uzxdg3\/\uRH"}
+String doesn't end with a "
+{"str":"\SL5V"}
+String doesn't end with a "
+{"str":"\\\\"3YOUMEWF1"}
+String doesn't end with a "
+{"str":"\u\u12fdC5K5PJAXV"}
+String doesn't end with a "
+{"str":"\\\u\/EWJJK1"}
+String doesn't end with a "
+{"str":"\uzxdg3\\\\/"\uF29AJ93"}
+String doesn't end with a "
+{"str":"\\LC2ZLPJ4RQ"}
+String doesn't end with a "
+{"str":"\\u\\"\\\uzxdg3"WVI7UTY8Q"}
+String doesn't end with a "
+{"str":"\/"\uzxdg3\/\u\u12fd\\/"4H29MO"}
+String doesn't end with a "
+{"str":"\/\/\u\uzxdg3\/6"}
+String doesn't end with a "
+{"str":"\uzxdg3"\/\uzxdg3\74TVSFTP6"}
+String doesn't end with a "
+{"str":"\\\\u"\u12fdARKZB0Y"}
+String doesn't end with a "
+{"str":"\u\uzxdg3\u12fd"\/\\/\uFQHRDFB"}
+String doesn't end with a "
+{"str":"\\/\\5ZTP1Q"}
+String doesn't end with a "
+{"str":"\\u12fd\\8P6NGFTZ"}
+String doesn't end with a "
+{"str":"\"\uHKN"}
+String doesn't end with a "
+{"str":""\\uzxdg3"}
+String doesn't end with a "
+{"str":""CJBJOT2"}
+Unable to parse object
+{"str":"\\\u\u12fd""}
+String doesn't end with a "
+{"str":"\/\/\uzxdg31CTO"}
+String doesn't end with a "
+{"str":"\\\\u\"P"}
+String doesn't end with a "
+{"str":"\\\u\\uzxdg3X9FIXBKQ"}
+String doesn't end with a "
+{"str":"\u9FZG9J"}
+String doesn't end with a "
+{"str":""}
+String doesn't end with a "
+{"str":""""\u"\/\uWHZPPHA2SA"}
+Unable to parse object
+{"str":"\uzxdg3\/\uzxdg3N4HEWP"}
+String doesn't end with a "
+{"str":"\uzxdg3R"}
+String doesn't end with a "
+{"str":"\\u\\\\\\"\Q1JY08"}
+String doesn't end with a "
+{"str":"\uWV5E"}
+String doesn't end with a "
+{"str":"\\\\u12fd\u12fd\\"N6SS"}
+String doesn't end with a "
+{"str":"\u12fd\\"\uTE8VTGG225"}
+String doesn't end with a "
+{"str":"\\\\uzxdg35IP7"}
+String doesn't end with a "
+{"str":"\uzxdg3\/"\"\/1YQH"}
+String doesn't end with a "
+{"str":"\/\\\D7263L"}
+String doesn't end with a "
+{"str":"\/\\\\\\/PZDIB"}
+String doesn't end with a "
+{"str":"\/\/\uzxdg334FCLD44AY"}
+String doesn't end with a "
+{"str":"\u\\u12fd\/"}
+String doesn't end with a "
+{"str":"\uzxdg3\\"\\\\/\WS"}
+String doesn't end with a "
+{"str":"\u12fd\\\u6XE0NDG3"}
+String doesn't end with a "
+{"str":""\u12fd\u\\0B83NRS"}
+Unable to parse object
+{"str":"\u12fd\uzxdg3BWYSTPGA4E"}
+String doesn't end with a "
+{"str":""\u12fd\\/"\uzxdg3\\SMAXY14XO"}
+Unable to parse object
+{"str":"\\\u\\\uzxdg3FNHNVMOW3"}
+String doesn't end with a "
+{"str":"\/\\\u12fd\/\u\uzxdg3\uzxdg3BXDY3"}
+String doesn't end with a "
+{"str":"\uzxdg3\u12fd\uzxdg3\u12fd\u12fd"\\\/U"}
+String doesn't end with a "
+{"str":""\\\u12fd\\u\uzxdg3"\/CPMYUVNHSF"}
+Unable to parse object
+{"str":"\\uzxdg3"\\\u12fd\u12fd\\\u12fdO5"}
+String doesn't end with a "
+{"str":"\/\uzxdg3NNLXA"}
+String doesn't end with a "
+{"str":"\uzxdg3\uLI19C770"}
+String doesn't end with a "
+{"str":"\\\\u\/"\u\\u12fd9NI"}
+String doesn't end with a "
+{"str":""\uzxdg3\/\\\\uzxdg3\uzxdg3I3HNMCB"}
+Unable to parse object
+{"str":"\u\u\\u\u913"}
+String doesn't end with a "
+{"str":"\/\uzxdg3\u\/89C2TM5XN"}
+String doesn't end with a "
+{"str":"\uzxdg3\/\\\uzxdg3\/\u12fdHETTCVDX"}
+String doesn't end with a "
+{"str":"\uzxdg3\\uS5WSYLP"}
+String doesn't end with a "
+{"str":"\u12fd""\u\\\\u12fd"\u12fd5WXC2S8I5M"}
+String doesn't end with a "
+{"str":"""\QX5RE"}
+String doesn't end with a "
+{"str":"\uzxdg3\\\/\u3GU920DAV"}
+String doesn't end with a "
+{"str":"\u12fd"\u12fd\/\u\u12fd\uzxdg3"E1DG8HIY"}
+String doesn't end with a "
+{"str":"\uzxdg3\0ZC0QQV6SP"}
+String doesn't end with a "
+{"str":""5"}
+String doesn't end with a "
+{"str":"\\\u12fd\/\\u12fd\uzxdg3"}
+String doesn't end with a "
+{"str":"\\\u\/\\/\/1OG2M"}
+String doesn't end with a "
+{"str":"\\FYEAXFJD"}
+String doesn't end with a "
+{"str":"I4YN6E"}
+String doesn't end with a "
+{"str":"\u12fd\uzxdg3\\u\uYJ"}
+String doesn't end with a "
+{"str":"\uzxdg3\u12fd\uzxdg3\\\u12fd\u\/B08CK"}
+String doesn't end with a "
+{"str":"\\\uzxdg3\u12fd9K4PX"}
+String doesn't end with a "
+{"str":"\\\\/N"}
+String doesn't end with a "
+{"str":"\\\u\u12fdA01VJ6NSB"}
+String doesn't end with a "
+{"str":"\/\\\u\\u12fd\u12fdW"}
+String doesn't end with a "
+{"str":"\/RMC7QWHT"}
+String doesn't end with a "
+{"str":"\u\u12fdE5XH6FLU"}
+String doesn't end with a "
+{"str":"\u\u\uzxdg3RQ6DYC35"}
+String doesn't end with a "
+{"str":"\u\/\\\\\u12fd\IXYTE0E"}
+String doesn't end with a "
+{"str":"\\\\uzxdg3\\uGOC"}
+String doesn't end with a "
+{"str":"\u12fd\72VIMSX"}
+String doesn't end with a "
+{"str":"\uzxdg3\u0U"}
+String doesn't end with a "
+{"str":"\\/\u\u12fd\u\uzxdg3\\/7"}
+String doesn't end with a "
+{"str":"\u12fd\uzxdg3\uzxdg3\\u12fd\u0U1"}
+String doesn't end with a "
+{"str":"\uR2V1CN"}
+String doesn't end with a "
+{"str":"\uzxdg3\uAQVKX2C"}
+String doesn't end with a "
+{"str":"\u\\\\\/\u12fd\/I9EKB5O4ZC"}
+String doesn't end with a "
+{"str":"\u12fd\\uzxdg3\\\/PQ4UJ"}
+String doesn't end with a "
+{"str":"\/\uzxdg3\uzxdg3\u\I8LFQND"}
+String doesn't end with a "
+{"str":"\\u12fd\\YPKILH6MUH"}
+String doesn't end with a "
+{"str":"\u\\\u\\\HDJ1IXMS2V"}
+String doesn't end with a "
+{"str":"\/\\\/\\\u\\uY1QW"}
+String doesn't end with a "
+{"str":"\uzxdg3\\\u12fd\u\/\\\/\u12fd"}
+String doesn't end with a "
+{"str":"\uYRPC"}
+String doesn't end with a "
+{"str":"\\\uzxdg3H23"}
+String doesn't end with a "
+{"str":"\u12fd\u\u\\\\\uzxdg3ZV0WKMZGT"}
+String doesn't end with a "
+{"str":"\\\u\uzxdg3\u12fd\\u12fdKG4X"}
+String doesn't end with a "
+{"str":"\\\\\uzxdg3\\\/\\\uzxdg3\/\/66OBJL39I"}
+String doesn't end with a "
+{"str":"\uzxdg3UA1"}
+String doesn't end with a "
+{"str":"\u12fd\\4BADJG5R"}
+String doesn't end with a "
+{"str":"\u12fd\u12fd\u12fd\uN9K2Q"}
+String doesn't end with a "
+{"str":"9UUQ"}
+String doesn't end with a "
+{"str":"\/\uzxdg3\uzxdg3\\\/\/T2OWZ47P"}
+String doesn't end with a "
+{"str":"\/\\u\\\\\\\\\/W07NS"}
+String doesn't end with a "
+{"str":"\/\/\uzxdg3\\\\\/2"}
+String doesn't end with a "
+{"str":"\/D7RSJCZM1"}
+String doesn't end with a "
+{"str":"\WTNZPE6"}
+String doesn't end with a "
+{"str":"\/\/\/\\\\uYYNG"}
+String doesn't end with a "
+{"str":"\/\u12fd\u\u\u\\\M"}
+String doesn't end with a "
+{"str":"\\\u\u12fdRD4WO9"}
+String doesn't end with a "
+{"str":"\u\u12fdQ"}
+String doesn't end with a "
+{"str":"\u\u\uzxdg3M34OWKN90S"}
+String doesn't end with a "
+{"str":"V"}
+String doesn't end with a "
+{"str":"\uzxdg3\uzxdg3\\u8"}
+String doesn't end with a "
+{"str":"\uzxdg3\\\YBS"}
+String doesn't end with a "
+{"str":"\uzxdg3\/\\\u12fd\u12fd\\uDBO2J"}
+String doesn't end with a "
+{"str":"\\311QRON"}
+String doesn't end with a "
+{"str":"\uzxdg3\\0"}
+String doesn't end with a "
+{"str":"\uzxdg3\/\u12fd\/E3U82"}
+String doesn't end with a "
+{"str":"\\\u\u\u\uzxdg369NI271W"}
+String doesn't end with a "
+{"str":"\u12fd\uzxdg3\u12fd\u\\P"}
+String doesn't end with a "
+{"str":"\/\/\\\/\/\\u\/EN2LC5Z2XU"}
+String doesn't end with a "
+{"str":"\uJOVM8"}
+String doesn't end with a "
+{"str":"\\\u\u\u\\u\u12fdXA2DI8JKUO"}
+String doesn't end with a "
+{"str":"\uzxdg3\\\u\/\uzxdg3\/\\u12fdLE"}
+String doesn't end with a "
+{"str":"\uzxdg3\u12fd\\\R6B997P1"}
+String doesn't end with a "
+{"str":"\H1YI6A7KRB"}
+String doesn't end with a "
+{"str":"\\u\/T4475"}
+String doesn't end with a "
+{"str":"\\\\ULVE"}
+String doesn't end with a "
+{"str":"\u12fd\\\\\/\B8KRXGWUA5"}
+String doesn't end with a "
+{"str":"\\u\u12fd\u12fd\\uzxdg3\u12fd\\MRIR7"}
+String doesn't end with a "
+{"str":"\\\\\\\PQT1TYH"}
+String doesn't end with a "
+{"str":"\\u\/\\\u12fd\\\uzxdg3\/TERHA7V0E"}
+String doesn't end with a "
+{"str":"\\GRXW"}
+String doesn't end with a "
