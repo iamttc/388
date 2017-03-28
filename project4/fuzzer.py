@@ -92,13 +92,14 @@ def get_number():
     #if bool(random.getrandbits(1)):
     #    out += minus
 
-    for _ in range(0, random.randint(1, 3)):
+    num_max = 1000000
+    for _ in range(0, random.randint(1, num_max)):
         out += random.choice(digits)
 
     if bool(random.getrandbits(1)):
         out += dot
 
-    for _ in range(0, random.randint(1, 5)):
+    for _ in range(0, random.randint(1, num_max)):
         out += random.choice(digits)
 
     ##It has trouble with these
@@ -124,7 +125,6 @@ def main():
         while True:
             #for testcase in get_tests():
             testcase = get_object()
-            #print testcase
             child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             _, stdErrOut = child.communicate(input = testcase)
             if child.returncode != 0 or stdErrOut != "":
@@ -136,7 +136,6 @@ def main():
                 print testcase
                 print errMsg
 
-            print
                     
 
 
