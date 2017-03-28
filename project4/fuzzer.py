@@ -54,6 +54,17 @@ def get_number():
     nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
     return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
 
+def get_true():
+    return random.choice(['true', 'True', 'TRUE', 't', 'T', '1'])
+
+def get_false():
+    return random.choice(['false', 'False', 'FALSE', 'f', 'F', '0']
+
+def get_null():
+    return random.choice(['null', 'Null', 'NULL'])
+
+def get_value():
+    return random.choice([get_string, get_number, get_obj, get_list, get_true, get_false, get_null])()
 
 def main():
     
