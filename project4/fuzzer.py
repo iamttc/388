@@ -7,38 +7,86 @@ import sys
 import random
 import string
 
+#####################
+global depth = 0
+def depth_check():
+    global depth
+    if depth == 3:
+        return 'FUCK'
+def inc_depth():
+    global depth
+    depth += 1
+def dec_depth():
+    global depth
+    depth -= 1
+#####################
+
 def get_int():
     return random.randint(0,50)
-def get_string():
+def get_chars():
     temp = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(get_int()))
     return '\"' + temp + '\"'
-
 
 # get a tuple of shit
 def get_tuple():
     
-    tp = get_string() + ':'
+    tp = get_chars() + ':'
 
-    i = random.randint(1, 10)
-    x = random.randint(1, 10)
+    i = random.randint(0, 3)
 
-    if x % i == 0: # integer
-        tp += str(get_int())
-
-    else: # string
-        tp += get_string()
+    if i == 0:
+        temp += get_number()
+    elif i == 1:
+        temp += get_string()
+    if i == 2:
+        tp += get_list()
 
     return str(tp)
+
+
+def get_string():
+    return '\"\"'
+
+
+# get json array
+def get_list():
+    if depth_check() == 'FUCK':
+        return ''
+    inc_depth()
+
+    list = '['
+    for i in range(0,10):
+        rand = random.randint(0,4):
+        if rand == 0:
+            list += get_number()
+        elif rand == 1:
+            list += get_string()
+        elif rand == 2:
+            list += get_obj()
+        elif rand == 3:
+            list += get_list()
+        if i != 10:
+            list += ','
+    list += ']'
+
+    dec_depth()
+    return list
 
 
 
 # get json object
 def get_obj():
+    if depth_check() == 'FUCK':
+        return ''
+    inc_depth()
+
     obj = '{'
     for x in range(get_int()):
         obj += get_tuple()
         obj += ','
     obj += '}'
+
+    dec_depth()
     return obj
 
 
@@ -61,11 +109,13 @@ def main():
         broken = []
         tests = get_tests()
         for testcase in tests:
-            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             _, stdErrOut = child.communicate(input = testcase)
             if child.returncode != 0:
                 broken.append(testcase)
                 sys.exit(0)
+        if len(broken) > 0:
+            print(broken)
 
 
 
