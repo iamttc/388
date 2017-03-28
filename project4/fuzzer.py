@@ -24,13 +24,12 @@ def dec_depth():
 def get_int():
     return random.randint(0,50)
 def get_chars():
-    temp = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(get_int()))
-    return '\"' + temp + '\"'
+    return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(get_int()))
 
 # get a tuple of shit
 def get_tuple():
     
-    tp = get_chars() + ':'
+    tp = '\"' + get_chars() + '\":'
 
     i = random.randint(0, 3)
 
@@ -50,7 +49,11 @@ def get_number():
 
 
 def get_string():
-    return '\"\"'
+    fukd = ['\\','\"','\\\\','\/','\b','\f','\n','\r','\t','\u','\u12fd','\uzxdg3']
+    temp = '\"'
+    temp += ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
+    temp += get_chars()
+    return temp
 
 
 # get json array
