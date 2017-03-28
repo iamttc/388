@@ -8,10 +8,10 @@ import random
 import string
 
 #####################
-global depth = 0
+global depth
 def depth_check():
     global depth
-    if depth == 3:
+    if depth == 2:
         return 'FUCK'
 def inc_depth():
     global depth
@@ -22,37 +22,26 @@ def dec_depth():
 #####################
 
 def get_int():
-    return random.randint(0,50)
+    return random.randint(0,10)
 def get_chars():
     return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(get_int()))
 
 # get a tuple of shit
 def get_tuple():
-    
-    tp = '\"' + get_chars() + '\":'
-
-    i = random.randint(0, 3)
-
-    if i == 0:
-        temp += get_number()
-    elif i == 1:
-        temp += get_string()
-    if i == 2:
-        tp += get_list()
-
-    return str(tp)
+    return '\"' + get_chars() + '\":' + get_value()
 
 
 def get_number():
     nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
-    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
+    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 10))])
 
 
 def get_string():
-    fukd = ['\\','\"','\\\\','\/','\b','\f','\n','\r','\t','\u','\u12fd','\uzxdg3']
+    fukd = ['\\','\"','\\\\','\/','\b','\f','\r','\t','\u','\u12fd','\uzxdg3'] # ,'\n'
     temp = '\"'
-    temp += ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
+    temp += ''.join([random.choice(fukd) for _ in range(0, random.randint(0, 10))])
     temp += get_chars()
+    temp += '\"'
     return temp
 
 
@@ -63,8 +52,8 @@ def get_list():
     inc_depth()
 
     list = '['
-    for i in range(0,10):
-        rand = random.randint(0,4):
+    for i in range(0,4):
+        rand = random.randint(0,4)
         if rand == 0:
             list += get_number()
         elif rand == 1:
@@ -73,7 +62,7 @@ def get_list():
             list += get_obj()
         elif rand == 3:
             list += get_list()
-        if i != 10:
+        if i != 3:
             list += ','
     list += ']'
 
@@ -85,7 +74,7 @@ def get_list():
 # get json object
 def get_obj():
     if depth_check() == 'FUCK':
-        return ''
+        return '{}'
     inc_depth()
 
     obj = '{'
@@ -106,15 +95,11 @@ def get_tests():
         tests.append(obj)
     return tests
 
-def get_number():
-    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
-    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
-
 def get_true():
     return random.choice(['true', 'True', 'TRUE', 't', 'T', '1'])
 
 def get_false():
-    return random.choice(['false', 'False', 'FALSE', 'f', 'F', '0']
+    return random.choice(['false', 'False', 'FALSE', 'f', 'F', '0'])
 
 def get_null():
     return random.choice(['null', 'Null', 'NULL'])
@@ -123,11 +108,17 @@ def get_value():
     return random.choice([get_string, get_number, get_obj, get_list, get_true, get_false, get_null])()
 
 def main():
+    global depth
+    depth = 0
     
     while True:
     # for testcase in tests:
         broken = []
         tests = get_tests()
+        for t in tests:
+            print('START OF OBJ')
+            print(t)
+            print('END OF OBJ')
         for testcase in tests:
             child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             _, stdErrOut = child.communicate(input = testcase)
@@ -136,6 +127,7 @@ def main():
                 sys.exit(0)
         if len(broken) > 0:
             print(broken)
+        break
 
 
 
