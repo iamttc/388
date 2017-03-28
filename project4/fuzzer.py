@@ -44,6 +44,11 @@ def get_tuple():
     return str(tp)
 
 
+def get_number():
+    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
+    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
+
+
 def get_string():
     return '\"\"'
 
@@ -97,10 +102,6 @@ def get_tests():
         obj = get_obj()
         tests.append(obj)
     return tests
-
-def get_number():
-    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
-    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
 
 
 def main():
