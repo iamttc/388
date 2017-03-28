@@ -9,16 +9,20 @@ import string
 
 #####################
 global depth
+
 def depth_check():
     global depth
     if depth == 2:
         return 'FUCK'
+
 def inc_depth():
     global depth
     depth += 1
+
 def dec_depth():
     global depth
     depth -= 1
+
 #####################
 
 #####Random helper shit#########
@@ -108,24 +112,22 @@ def get_tests():
 def main():
     global depth
     depth = 0
+
+    errDict = {}
     
-    while True:
-    # for testcase in tests:
-        broken = []
-        tests = get_tests()
-        for t in tests:
-            print('START OF OBJ')
-            print(t)
-            print('END OF OBJ')
-        for testcase in tests:
-            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-            _, stdErrOut = child.communicate(input = testcase)
-            if child.returncode != 0 or stdErrOut != "":
-                broken.append(testcase)
-                sys.exit(0)
-        if len(broken) > 0:
-            print(broken)
-        break
+    with open('fuzzInput.txt', 'a') as f:
+        while True:
+            for testcase in get_tests():
+                child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+                _, stdErrOut = child.communicate(input = testcase)
+                if child.returncode != 0 or stdErrOut != "":
+                    errMsg = stdErrOut.strip().split('\n')[0]
+                    if errMsg not in errDict:
+                        errDict[errMsg] = testcase
+                        f.write(testcase + '\n')
+                        print errMsg
+                    
+
 
 if __name__ == '__main__':
     main()
