@@ -84,7 +84,7 @@ def get_value():
     return random.choice([get_string, get_number, get_object, get_array, get_true, get_false, get_null])()
 
 def get_string():
-    fukd = ['\\','\"','\\\\','\/','\b','\f','\r','\t','\u','\u12fd','\uzxdg3'] # ,'\n'
+    fukd = ['\\','\"','\\\\','\/','\b','\u','\u12fd','\uzxdg3'] # ,'\n', '\r', '\t', '\f'
     temp = '\"'
     temp += ''.join([random.choice(fukd) for _ in range(0, random.randint(0, 10))])
     temp += get_chars()
@@ -126,8 +126,6 @@ def main():
         if len(broken) > 0:
             print(broken)
         break
-
-
 
 if __name__ == '__main__':
     main()
