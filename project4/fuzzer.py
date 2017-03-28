@@ -50,20 +50,21 @@ def get_tests():
         tests.append(obj)
     return tests
 
+def get_number():
+    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
+    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 50))])
+
 
 def main():
-
-    print('fuck')
-
     
     while True:
     # for testcase in tests:
         broken = []
         tests = get_tests()
         for testcase in tests:
-            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE)
+            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             _, stdErrOut = child.communicate(input = testcase)
-            if child.returncode != 0:
+            if child.returncode != 0 or stdErrOut != "":
                 broken.append(testcase)
                 sys.exit(0)
 
