@@ -124,6 +124,7 @@ def main():
                     errMsg = stdErrOut.strip().split('\n')[0]
                     if errMsg not in errDict:
                         errDict[errMsg] = testcase
+                        f.write(errMsg + '\n')
                         f.write(testcase + '\n')
                         print errMsg
                     

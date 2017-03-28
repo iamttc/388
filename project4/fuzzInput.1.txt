@@ -1,0 +1,10 @@
+String doesnt end with a "
+{"0NRK4K4Y":true,"IF":"\/\u12fd\u\u12fd\\\uzxdg3\\u12fd\uzxdg3AV6UA","5ER4CVU":"\"\\u12fd\\JI1RYRVVH","4GX2D3OKH":4,}
+Unable to parse anything
+{"ZC":[e4955e.060,,,{}],"8":"\/\/\uYYWS","NQI6L":10,"J4MR":{},"J0G":"\\\"\\\uL8Q3L","0H":{"X8":e25,"KNO1AIXWW":true,"I9XI":NULL,"X5S":Null,"PA2TL2":""\u\u\u"34ACQJ","SUO2H":"\u12fd\uzxdg3"PTI71N4",},"HUAAV4EN8":,"1FWBN":"XG1A8NDM","XG5HW":[-2,"\\u12fd\\\\\\uzxdg3OS",,{}],"7NMMJRVNW1":FALSE,}
+Unable to parse object
+{"ABF":{"T66":33+9307..,"UHKIEWS":""\/\\\\\/\\C90L2MHQU",},"TQSU0MK":true,"6ZLXPE9B":f,"Q0S5DS":{"A5O":.,"T3PITA4NU":Null,"NOKMZ99S":TRUE,"U52N00V7OC":NULL,"GF8ICCR":Null,"AIFID":,"":,"DW1":,"":f,},}
+Multiple decimal points in a number
+{"LVRPAL45H":2.12411.,}
+No colon between objects key and value
+{"CALRRM75K":{"4B0OI1P":false,"WJRJ6J1KC3":null,"Z":"""""\"\uzxdg3\u12fd\uG","KWBHON28":FALSE,"W8S":{},"3TKAI3R2":e55,},"0Z0JFG":{"52LP":,"EGU6GF":T,},"KYB":0,"8D4BQ":{"TJC8Z3N":,},}
