@@ -33,13 +33,13 @@ def get_chars():
     return ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(get_int()))
 
 def get_true():
-    return random.choice(['true', 'True', 'TRUE', 't', 'T', '1'])
+    return random.choice(['true', 'tru', 'tr', 'True', 'Tru', 'Tr', 'TRUE', 'TRU', 'TR'])
 
 def get_false():
-    return random.choice(['false', 'False', 'FALSE', 'f', 'F', '0'])
+    return random.choice(['false', 'fals', 'fal', 'fa', 'False', 'Fals', 'Fal', 'Fa', 'FALSE', 'FALS', 'FAL', 'FA'])
 
 def get_null():
-    return random.choice(['null', 'Null', 'NULL'])
+    return random.choice(['null', 'nul', 'nu', 'Null', 'Nul', 'Nu', 'NULL', 'NUL', 'NU'])
 
 def get_tuple():
     return '\"' + get_chars() + '\":' + get_value()
@@ -66,23 +66,23 @@ def get_array():
         return ''
     inc_depth()
 
-    list = '['
+    array = '['
     for i in range(0,4):
         rand = random.randint(0,4)
         if rand == 0:
-            list += get_number()
+            array += get_number()
         elif rand == 1:
-            list += get_string()
+            array += get_string()
         elif rand == 2:
-            list += get_object()
+            array += get_object()
         elif rand == 3:
-            list += get_array()
+            array += get_array()
         if i != 3:
-            list += ','
-    list += ']'
+            array += ','
+    array += ']'
 
     dec_depth()
-    return list
+    return array
 
 def get_value():
     return random.choice([get_string, get_number, get_object, get_array, get_true, get_false, get_null])()
@@ -96,8 +96,33 @@ def get_string():
     return temp
 
 def get_number():
-    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.', 'e', 'E', '+', '-']
-    return ''.join([random.choice(nums) for _ in range(0, random.randint(0, 10))])
+    digits = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+    minus = '-'
+    dot = '.'
+    special = ['e', 'e+', 'e-', 'E', 'E+', 'E-']
+
+    out = ""
+    ##Apparently it can't handle this..
+    #if bool(random.getrandbits(1)):
+    #    out += minus
+
+    for _ in range(0, random.randint(1, 3)):
+        out += random.choice(digits)
+
+    if bool(random.getrandbits(1)):
+        out += dot
+
+    for _ in range(0, random.randint(1, 5)):
+        out += random.choice(digits)
+
+    ##It has trouble with these
+    #if bool(random.getrandbits(1)):
+    #    out += random.choice(special)
+
+    #    for _ in range(0, random.randint(1, 2)):
+    #        out += random.choice(digits)
+
+    return out
 
 ##############################
 
@@ -114,19 +139,23 @@ def main():
     depth = 0
 
     errDict = {}
+
+    #Test each thing separately (all arrays, all nums, all strings, etc
     
     with open('fuzzInput.txt', 'a') as f:
         while True:
-            for testcase in get_tests():
-                child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
-                _, stdErrOut = child.communicate(input = testcase)
-                if child.returncode != 0 or stdErrOut != "":
-                    errMsg = stdErrOut.strip().split('\n')[0]
-                    if errMsg not in errDict:
-                        errDict[errMsg] = testcase
-                        f.write(errMsg + '\n')
-                        f.write(testcase + '\n')
-                        print errMsg
+            #for testcase in get_tests():
+            testcase = '''{"a":''' + get_number() + '''}'''
+            print testcase
+            child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
+            _, stdErrOut = child.communicate(input = testcase)
+            if child.returncode != 0 or stdErrOut != "":
+                errMsg = stdErrOut.strip().split('\n')[0]
+                #if errMsg not in errDict:
+                    #errDict[errMsg] = testcase
+                f.write(testcase + '\n')
+                f.write(errMsg + '\n')
+                print errMsg
                     
 
 
