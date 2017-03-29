@@ -7,13 +7,26 @@ import sys
 import random
 import string
 
+
+'''
+Two ways to use:
+
+    #Regular ascii
+    python fuzzer.py | ./jsonParser
+
+    #Base64
+    python fuzzer.py
+    cat fuzzInput.txt | base64 -d | ./jsonParser
+
+'''
+
 #####################
 global depth
 
 def depth_check():
     global depth
     if depth == 2:
-        return 'FUCK'
+        return 'DEEP'
 
 def inc_depth():
     global depth
@@ -25,7 +38,7 @@ def dec_depth():
 
 #####################
 
-#####Random helper shit#########
+#####Helper functions###########
 def get_int():
     return random.randint(0,10)
 
@@ -48,10 +61,9 @@ def get_tuple():
     return '\"' + get_chars() + '\":' + get_value()
 ########################
 
-
-######All json objects#########
+##########Valid JSON###########
 def get_object():
-    if depth_check() == 'FUCK':
+    if depth_check() == 'DEEP':
         return '{"":""}'
     inc_depth()
 
@@ -61,7 +73,7 @@ def get_object():
     return obj
 
 def get_array():
-    if depth_check() == 'FUCK':
+    if depth_check() == 'DEEP':
         return '[]'
     inc_depth()
 
@@ -74,7 +86,8 @@ def get_value():
     return random.choice([get_string, get_number, get_object, get_array, get_true, get_false, get_null])()
 
 def get_string():
-    cant_handle = ['\\\"', '\\\\', '\\/', '\\b', '\\f', '\\n', '\\r', '\\t', '\\uaaaa']
+    ##Can't handle any of these...
+    #special = ['\\\"', '\\\\', '\\/', '\\b', '\\f', '\\n', '\\r', '\\t', '\\uaaaa']
     out = '\"'
     out += get_chars()
     #out += random.choice(special)
@@ -117,24 +130,17 @@ def main():
     global depth
     depth = 0
 
-    errDict = {}
-
-    #Test each thing separately (all arrays, all nums, all strings, etc
-    
-    with open('fuzzInput.txt', 'a') as f:
+    with open('fuzzInput.txt', 'w') as f:
         while True:
-            #for testcase in get_tests():
             testcase = get_object()
             child = subprocess.Popen("./jsonParser", stdin=subprocess.PIPE, stderr=subprocess.PIPE, stdout=subprocess.PIPE)
             _, stdErrOut = child.communicate(input = testcase)
             if child.returncode != 0 or stdErrOut != "":
                 errMsg = stdErrOut.strip().split('\n')[0]
-                #if errMsg not in errDict:
-                    #errDict[errMsg] = testcase
-                f.write(testcase + '\n')
-                f.write(errMsg + '\n')
+                out = base64.b64encode(testcase)
+                f.write(out)
                 print testcase
-                print errMsg
+                exit(1);
 
                     
 
