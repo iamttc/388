@@ -12,6 +12,12 @@
    form history -> nerf guns
    places -> hasbro and nerg gun hacks
 
+7. Deleted evil_plan.bmp in /3/nefarious/Documents
+   /Desktop/msf3
+    mozilla sqlite journal
+    hydra
+    password files in /3/home/nefarious
+
 
 
 
@@ -22,7 +28,6 @@ hydra program in /3/home/nefarious
 downloaded passwords and exploit framework (firefox downloads)
 
 !!!! images in /3/home/nefarious/.thumbnails, definitely evidence
-
 
 
 
