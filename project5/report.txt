@@ -1,1 +1,3 @@
-1. FATAL: No bootable medium found! System halted.
+1. The VM is unable to boot since there isn't a bootable OS
+
+2. Puppy Linux

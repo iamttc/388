@@ -1,0 +1,24 @@
+Contents Of File: /1/etc/rc.d/PUPSTATE
+
+
+PUPMODE=5
+PDEV1='sda1'
+DEV1FS='ext2'
+PUPSFS='sda1,ext2,/puppy431/pup-431.sfs'
+PUPSAVE=''
+PMEDIA='atahd'
+#v3.97: kernel with libata pata has both sata and pata drives in ATADRIVES...
+ATADRIVES='sda '
+#these directories are unionfs layers in /initrd...
+SAVE_LAYER=''
+PUP_LAYER='/pup_ro2'
+#The partition that has the pupsave file is mounted here...
+PUP_HOME=''
+#(in /initrd) ...note, /mnt/home is a link to it. $THIS IS INTERESTING$
+#this file has extra kernel drivers and firmware...
+ZDRV=''
+#complete set of modules in the initrd (moved to main f.s.)...
+ZDRVINIT='no'
+PSWAPFILE=''
+PSAVEMARK=''
+FASTPARTS='sda1|ext2 sda5|ext3 '
