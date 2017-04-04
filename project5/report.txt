@@ -23,7 +23,7 @@
 
 password list in /3/home/nefarious/Desktop
 
-hydra program in /3/home/nefarious
+hydra program in /3/home/nefarious -> used to brute force remote login passwords
 
 downloaded passwords and exploit framework (firefox downloads)
 
