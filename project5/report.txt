@@ -1,3 +1,5 @@
 1. The VM is unable to boot since there isn't a bootable OS
 
 2. Puppy Linux
+
+3. /3/home -> nefarious
