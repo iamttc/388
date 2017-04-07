@@ -1,4 +1,6 @@
 1. The VM is unable to boot since there isn't a bootable OS
+@1445 Rebuild the vdi, take a closer look at the first time that it boots. 
+we probably need to explain better
 
 2. Puppy Linux
 
