@@ -1,0 +1,26 @@
+Nice find team! We were already able to check out the other hosts 
+and unfortunately did not find anything of interest, but it 
+certainly looks like the suspect had access to the machine at 
+141.212.111.42. However, it appears that the machine has changed 
+IP addresses since the time of the murder.  The new address 
+is 75.101.230.146. Please figure out how to log into this 
+machine and investigate the situation. This raises additional 
+questions for your analysis:
+
+10. Who owns this machine, according to the files on it?
+
+11. What does its purpose appear to be?
+    (Hint: What network service is running?)
+
+12. Was the suspect granted access to the machine, or was it
+    compromised? If the suspect was granted access, when? If it was
+    compromised, when and how was it compromised?
+
+13. In either case, it appears as though the suspect has abused his
+    access to the machine. How?
+
+14. Can you remedy the abuse?  [Extra credit.]
+
+Please get to the bottom of this. We're counting on you!
+
+-Headquarters

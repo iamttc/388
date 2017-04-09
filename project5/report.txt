@@ -32,6 +32,16 @@ downloaded passwords and exploit framework (firefox downloads)
 !!!! images in /3/home/nefarious/.thumbnails, definitely evidence
 
 
+Took passwords.zip from home directory, used fcrackzip on it with the linux dictionary
+
+fcrackzip -D -p /usr/share/dict/words passwords.zip 
+possible pw found: warrant () 
+
+warrant was the password that unzipped it using this command
+
+unzip -P warrant passwords.zip  -d ./done
+
+
 
 
 
