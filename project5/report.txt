@@ -61,5 +61,8 @@ Going to 75.101.230.146:80 reveals:
 <html><body><h1>Academic Researcher</h1>
 <p>Dr. Academic Researcher is a loser who knows nothing about computer security. <!--The duck flies at midnight! --></p>
 </body></html>
+http://www.sis.pitt.edu/jjoshi/TELCOM2813/Spring2005/FinaleKateebAltimus.ppt
 
+Seems to have something to do with digital steganography
 
+darialwknacs.
