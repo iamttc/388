@@ -43,5 +43,14 @@ unzip -P warrant passwords.zip  -d ./done
 
 
 
+$ nmap 75.101.230.146
 
+Starting Nmap 7.12 ( https://nmap.org ) at 2017-04-09 14:46 EDT
+Nmap scan report for ec2-75-101-230-146.compute-1.amazonaws.com (75.101.230.146)
+Host is up (0.047s latency).
+Not shown: 998 filtered ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
 
+Nmap done: 1 IP address (1 host up) scanned in 8.53 seconds
