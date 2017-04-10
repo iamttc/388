@@ -55,6 +55,7 @@ PORT   STATE SERVICE
 
 Nmap done: 1 IP address (1 host up) scanned in 8.53 seconds
 
+cat /etc/services also reveals this
 
 Going to 75.101.230.146:80 reveals:
 
@@ -110,3 +111,5 @@ root .bash_history
 
 auth.log.2 shows brute force entering by nefarious
 november 25th 9pmish using hydra basically
+
+Still haven't used pdf cracking tool.... should probably find a use for that
