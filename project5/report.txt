@@ -79,3 +79,34 @@ Hydra (http://www.thc.org/thc-hydra) starting at 2017-04-09 20:19:50
 [22][ssh] host: 75.101.230.146   login: root   password: jjdMn7vM3wU5tA
 1 of 1 target successfully completed, 1 valid password found
 Hydra (http://www.thc.org/thc-hydra) finished at 2017-04-09 20:20:04
+
+
+
+
+root .bash_history
+    1  ifconfig eth1 141.212.111.42
+    2  tail /var/log/auth.log 
+    3  tail /var/log/auth.log 
+    4  tail /var/log/auth.log 
+    5  tail /var/log/auth.log 
+    6  tail /var/log/auth.log 
+    7  tail /var/log/auth.log 
+    8  tail /var/log/auth.log 
+    9  tail /var/log/auth.log 
+   10  tail /var/log/auth.log 
+   11  tail /var/log/auth.log 
+   12  rm .bash_history
+   13  shutdown -h now
+   14  passwd
+   15  vi /var/www/index.html 
+   16  exit
+   17  passwd       <---- password changed
+   18  vi /var/www/index.html .
+   19  ifconfig eth1 141.212.111.42
+   20  shutdown -h now
+   21  passwd
+   22  exit
+
+
+auth.log.2 shows brute force entering by nefarious
+november 25th 9pmish using hydra basically
