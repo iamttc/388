@@ -2,11 +2,11 @@
 @1445 Rebuild the vdi, take a closer look at the first time that it boots. 
 we probably need to explain better
 
-2. Puppy Linux
+2. Puppy Linux. Evidence is in 2a.txt, 2b.txt.
 
-3. /3/home -> nefarious
+3. The username is nefarious.
 
-4. Yes, irc log reveals accomplice
+4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009, which is in the timeline of our crime. Evidence is in 4a.txt.
 
 5.
 
@@ -14,13 +14,18 @@ we probably need to explain better
    form history -> nerf guns
    places -> hasbro and nerg gun hacks
 
-7. Deleted evil_plan.bmp in /3/nefarious/Documents
-   /Desktop/msf3
-    mozilla sqlite journal
-    hydra
-    password files in /3/home/nefarious
+7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. Evidence is in the password folder.
 
 
+8. 
+
+
+9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depics 'hapless victim' being shot by the subject. Evidence is in 9a.png.
+
+
+/Desktop/msf3
+mozilla sqlite journal
+hydra
 
 
 password list in /3/home/nefarious/Desktop
