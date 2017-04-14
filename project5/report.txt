@@ -26,98 +26,36 @@ nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee D
 9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depics 'hapless victim' being shot by the subject. Evidence is 9a.png.
 
 
+/////// Part 2 ///////
+
+remote machine: 141.212.111.42 -> 75.101.230.146
+password crack: hydra -L users.txt -P passwords/allpass.txt ssh://75.101.230.146
+password:       jjdMn7vM3wU5tA
+
+10. Who owns this machine, according to the files on it?
+The machine is owned by Dr. Academic Researcher. The only account under the home directory is 'academic', and the 'index.html' file mentions him.
+
+11. What does its purpose appear to be? (Hint: What network service is running?)
+The machine is hosting a web server on port 80. When nmapping the public IP (nmap 75.101.230.146), we notice only two open ports, 80 and 22. Port 80 is serving 'index.html' and port 22 is allowing ssh.
+
+12. Was the suspect granted access to the machine, or was it
+    compromised? If the suspect was granted access, when? If it was
+    compromised, when and how was it compromised?
+The machine was compromised. In 'auth.log.2', we can see hundreds of failed ssh login attempts under the username 'root' (verified by pam_unix). This started on Nov 24 21:20:25 and was successful on Nov 25 10:36:43. We believe nefarious was the user trying to login because there are multiple occurances when the username 'nefarious' was used instead of root. This, however, provided the error 'Invalid user nefarious from 141.212.111.41'. He may have tried to login with his own account on accident. Based on the style of the attack and the original machine being inspected, we think nefarious used Hydra to conduct the attack. Nefarious also searched for common password lists on Firefox, downloaded one, and may have used this in conjuction with Hydra. This timeframe also lines up with the timeframe of the shooting attack.
+
+13. In either case, it appears as though the suspect has abused his
+    access to the machine. How?
+The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three times again. He also set the static eth1 ip to 141.212.111.42. After inspecting var/log/apache2/access.log, there appeared to be a full python/perl/php site hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served. Evidence is in 13a.txt, 13b.txt.
+
+14. Can you remedy the abuse?
+We believe there is embedded steganography on the machine, but we were unable to find examples. This notion is due to the sentence 'The Duck Flies at Midnight' present on the 'index.html' page. This is a common phrase used to represent steganography, as it is the first letter of each word in the sentence 'To human eyes, data usually contains known forms, like images,e-mail, sounds, and text. Most Internet data naturally includesgratuitous headers, too. These are media exploited using newcontroversial logical encodings: steganography and marking.' The second part of the message is 'Tame Uncle Sam'.
+
+/////// Notes ///////
+
 /Desktop/msf3
 mozilla sqlite journal
 hydra
 
-
-password list in /3/home/nefarious/Desktop
-
-hydra program in /3/home/nefarious -> used to brute force remote login passwords
-
 downloaded passwords and exploit framework (firefox downloads)
-
-!!!! images in /3/home/nefarious/.thumbnails, definitely evidence
-
-
-Took passwords.zip from home directory, used fcrackzip on it with the linux dictionary
-
-fcrackzip -D -p /usr/share/dict/words passwords.zip 
-possible pw found: warrant () 
-
-warrant was the password that unzipped it using this command
-
-unzip -P warrant passwords.zip  -d ./done
-
-
-
-$ nmap 75.101.230.146
-
-Starting Nmap 7.12 ( https://nmap.org ) at 2017-04-09 14:46 EDT
-Nmap scan report for ec2-75-101-230-146.compute-1.amazonaws.com (75.101.230.146)
-Host is up (0.047s latency).
-Not shown: 998 filtered ports
-PORT   STATE SERVICE
-22/tcp open  ssh
-80/tcp open  http
-
-Nmap done: 1 IP address (1 host up) scanned in 8.53 seconds
-
-cat /etc/services also reveals this
-
-Going to 75.101.230.146:80 reveals:
-
-<html><body><h1>Academic Researcher</h1>
-<p>Dr. Academic Researcher is a loser who knows nothing about computer security. <!--The duck flies at midnight! --></p>
-</body></html>
-http://www.sis.pitt.edu/jjoshi/TELCOM2813/Spring2005/FinaleKateebAltimus.ppt
-
-Seems to have something to do with digital steganography
-
-The website itself seems to be abuse lol
-
-
-$ hydra -L users.txt -P passwords/allpass.txt ssh://75.101.230.146
-Hydra v8.4 (c) 2017 by van Hauser/THC - Please do not use in military or secret service organizations, or for illegal purposes.
-
-Hydra (http://www.thc.org/thc-hydra) starting at 2017-04-09 20:19:50
-[WARNING] Many SSH configurations limit the number of parallel tasks, it is recommended to reduce the tasks: use -t 4
-[WARNING] Restorefile (you have 10 seconds to abort...) from a previous session found, to prevent overwriting, ./hydra.restore
-[DATA] max 16 tasks per 1 server, overall 16 tasks, 20 login tries (l:4/p:5), ~2 tries per task
-[DATA] attacking service ssh on port 22
-[22][ssh] host: 75.101.230.146   login: root   password: jjdMn7vM3wU5tA
-1 of 1 target successfully completed, 1 valid password found
-Hydra (http://www.thc.org/thc-hydra) finished at 2017-04-09 20:20:04
-
-
-
-
-root .bash_history
-    1  ifconfig eth1 141.212.111.42
-    2  tail /var/log/auth.log 
-    3  tail /var/log/auth.log 
-    4  tail /var/log/auth.log 
-    5  tail /var/log/auth.log 
-    6  tail /var/log/auth.log 
-    7  tail /var/log/auth.log 
-    8  tail /var/log/auth.log 
-    9  tail /var/log/auth.log 
-   10  tail /var/log/auth.log 
-   11  tail /var/log/auth.log 
-   12  rm .bash_history
-   13  shutdown -h now
-   14  passwd
-   15  vi /var/www/index.html 
-   16  exit
-   17  passwd       <---- password changed
-   18  vi /var/www/index.html .
-   19  ifconfig eth1 141.212.111.42
-   20  shutdown -h now
-   21  passwd
-   22  exit
-
-
-auth.log.2 shows brute force entering by nefarious
-november 25th 9pmish using hydra basically
 
 Still haven't used pdf cracking tool.... should probably find a use for that

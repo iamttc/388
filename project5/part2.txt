@@ -20,7 +20,7 @@ The machine was compromised. In 'auth.log.2', we can see hundreds of failed ssh 
 
 13. In either case, it appears as though the suspect has abused his
     access to the machine. How?
-The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three times again. He also set the static eth1 ip to 141.212.111.42. After inspecting var/log/apache2/access.log, there appeared to be a full python/perl/php site hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served.
+The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three times again. He also set the static eth1 ip to 141.212.111.42. After inspecting var/log/apache2/access.log, there appeared to be a full python/perl/php site hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served. Evidence is in 13a.txt, 13b.txt.
 
 14. Can you remedy the abuse?  [Extra credit.]
 
