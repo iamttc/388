@@ -1,30 +1,20 @@
-1. The VM is unable to boot since there isn't a bootable OS
-@1445 Rebuild the vdi, take a closer look at the first time that it boots. 
-we probably need to explain better
+1. The VM is unable to boot since there isn't a bootable OS. Evidence in 1a.png
 
 2. Puppy Linux. Evidence is in 2a.txt, 2b.txt.
 
-3. The username is nefarious.
+3. The username is nefarious, as that is the only directory in the /3/home directory.
 
 4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009, which is in the timeline of our crime. Evidence is in 4a.txt.
 
 5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it (fcrackzip -D -p /usr/share/dict/words passwords.zip), which turned out to be 'warrant'. After unzipping (unzip -P warrant passwords.zip  -d ./done), it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
 
-6. Yes, there are several pieces of evidence in Nefarious's Mozilla Firefox installation,
-(/3/home/nefarious/.mozilla) that show that he researched Nerf Guns and bought one online.
-First, his cookies reveal him going to wiki.answers.com, ehow.com, popularmechanics.com, and metacafe.com
-for information about Nerf guns (Evidence in 6a.txt). Second, his search bar history
-reveals him searching for "best nerf guns" (Evidence in 6b.txt). Third, his places.sqlite file, which
-"stores the annotations, bookmarks, favorite icons, input history, keywords, and browsing history" (Source: http://kb.mozillazine.org/Places.sqlite), 
-had evidence (in addition to what we mentioned earlier) that Nefarious visited the hasbro website after googling for nerf guns, bought a
-nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee Double Blaster), and read about Nerf Gun hacks on metacafe.com (Evidence in 6c.txt).
+6. Yes, there are several pieces of evidence in Nefarious's Mozilla Firefox installation, (/3/home/nefarious/.mozilla) that show that he researched Nerf Guns and bought one online.  First, his cookies reveal him going to wiki.answers.com, ehow.com, popularmechanics.com, and metacafe.com for information about Nerf guns (Evidence in 6a.txt). Second, his search bar history reveals him searching for "best nerf guns" (Evidence in 6b.txt). Third, his places.sqlite file, which "stores the annotations, bookmarks, favorite icons, input history, keywords, and browsing history" (Source: http://kb.mozillazine.org/Places.sqlite), had evidence (in addition to what we mentioned earlier) that Nefarious visited the hasbro website after googling for nerf guns, bought a nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee Double Blaster), and read about Nerf Gun hacks on metacafe.com (Evidence in 6c.txt).
 
 7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
 
 8. 
 
-9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depics 'hapless victim' being shot by the subject. Evidence is 9a.png.
-
+9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depicts 'hapless victim' being shot by the subject. Evidence is 9a.png. Additionally, inside the firefox installation (Evidence 6*.txt), there was evidence of Nefarious googling and downloading the metasploit framework 3, and the msf3 files were found in his home directory. Along with this malicious tool, the remote login cracking program Hydra (and a list of passwords to try) was found in Nefarious's home directory, which he probably used to gain access to the machine discussed in Part 2.
 
 /////// Part 2 ///////
 
