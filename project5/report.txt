@@ -8,7 +8,7 @@ we probably need to explain better
 
 4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009, which is in the timeline of our crime. Evidence is in 4a.txt.
 
-5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it, which turned out to be 'warrant'. After unzipping, it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
+5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it (fcrackzip -D -p /usr/share/dict/words passwords.zip), which turned out to be 'warrant'. After unzipping (unzip -P warrant passwords.zip  -d ./done), it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
 
 6. Firefox cookies -> stuff about guns
    form history -> nerf guns

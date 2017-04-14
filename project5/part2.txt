@@ -11,7 +11,7 @@ questions for your analysis:
 The machine is owned by Dr. Academic Researcher. The only account under the home directory is 'academic', and the 'index.html' file mentions him.
 
 11. What does its purpose appear to be? (Hint: What network service is running?)
-The machine is hosting a web server on port 80. When nmapping the public IP, we notice only two open ports, 80 and 22. Port 80 is serving 'index.html' and port 22 is allowing ssh.
+The machine is hosting a web server on port 80. When nmapping the public IP (nmap 75.101.230.146), we notice only two open ports, 80 and 22. Port 80 is serving 'index.html' and port 22 is allowing ssh.
 
 12. Was the suspect granted access to the machine, or was it
     compromised? If the suspect was granted access, when? If it was
