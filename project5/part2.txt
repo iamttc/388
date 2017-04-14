@@ -8,16 +8,19 @@ machine and investigate the situation. This raises additional
 questions for your analysis:
 
 10. Who owns this machine, according to the files on it?
+The machine is owned by Dr. Academic Researcher. The only account under the home directory is 'academic', and the 'index.html' file mentions him.
 
-11. What does its purpose appear to be?
-    (Hint: What network service is running?)
+11. What does its purpose appear to be? (Hint: What network service is running?)
+The machine is hosting a web server on port 80. When nmapping the public IP, we notice only two open ports, 80 and 22. Port 80 is serving 'index.html' and port 22 is allowing ssh.
 
 12. Was the suspect granted access to the machine, or was it
     compromised? If the suspect was granted access, when? If it was
     compromised, when and how was it compromised?
+The machine was compromised. In 'auth.log.2', we can see hundreds of ssh login attempts under the username 'root'. This started on Nov 24 21:20:25 and was successful on Nov 25 10:36:43. We believe nefarious was the user trying to login because there are multiple occurances when the username 'nefarious' was used instead of root. This, however, provided the error 'Invalid user nefarious from 141.212.111.41'. He may have tried to login with his own account on accident. Based on the style of the attack and the original machine being inspected, we think nefarious used Hydra to conduct the attack. This timeframe also lines up with the timeframe of the attack.
 
 13. In either case, it appears as though the suspect has abused his
     access to the machine. How?
+The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three times again. He also set the static eth1 ip to 141.212.111.42. After inspecting var/log/apache2/access.log, there appeared to be a full python/perl/php site hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served.
 
 14. Can you remedy the abuse?  [Extra credit.]
 
