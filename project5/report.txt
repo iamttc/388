@@ -14,7 +14,7 @@ we probably need to explain better
    form history -> nerf guns
    places -> hasbro and nerg gun hacks
 
-7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. Evidence is in the password folder.
+7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder.
 
 
 8. 
