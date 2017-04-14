@@ -19,7 +19,7 @@ reveals him searching for "best nerf guns" (Evidence in 6b.txt). Third, his plac
 had evidence (in addition to what we mentioned earlier) that Nefarious visited the hasbro website after googling for nerf guns, bought a
 nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee Double Blaster), and read about Nerf Gun hacks on metacafe.com (Evidence in 6c.txt).
 
-7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder.
+7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
 
 8. 
 
