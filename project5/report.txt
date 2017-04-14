@@ -10,9 +10,14 @@ we probably need to explain better
 
 5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it (fcrackzip -D -p /usr/share/dict/words passwords.zip), which turned out to be 'warrant'. After unzipping (unzip -P warrant passwords.zip  -d ./done), it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
 
-6. Firefox cookies -> stuff about guns
-   form history -> nerf guns
-   places -> hasbro and nerg gun hacks
+6. Yes, there are several pieces of evidence in Nefarious's Mozilla Firefox installation,
+(/3/home/nefarious/.mozilla) that show that he researched Nerf Guns and bought one online.
+First, his cookies reveal him going to wiki.answers.com, ehow.com, popularmechanics.com, and metacafe.com
+for information about Nerf guns (Evidence in 6a.txt). Second, his search bar history
+reveals him searching for "best nerf guns" (Evidence in 6b.txt). Third, his places.sqlite file, which
+"stores the annotations, bookmarks, favorite icons, input history, keywords, and browsing history" (Source: http://kb.mozillazine.org/Places.sqlite), 
+had evidence (in addition to what we mentioned earlier) that Nefarious visited the hasbro website after googling for nerf guns, bought a
+nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee Double Blaster), and read about Nerf Gun hacks on metacafe.com (Evidence in 6c.txt).
 
 7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder.
 
