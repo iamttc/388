@@ -8,7 +8,7 @@ we probably need to explain better
 
 4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009, which is in the timeline of our crime. Evidence is in 4a.txt.
 
-5.
+5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it, which turned out to be 'warrant'. After unzipping, it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
 
 6. Firefox cookies -> stuff about guns
    form history -> nerf guns
@@ -16,11 +16,9 @@ we probably need to explain better
 
 7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder.
 
-
 8. 
 
-
-9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depics 'hapless victim' being shot by the subject. Evidence is in 9a.png.
+9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depics 'hapless victim' being shot by the subject. Evidence is 9a.png.
 
 
 /Desktop/msf3
