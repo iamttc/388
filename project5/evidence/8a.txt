@@ -1,0 +1,569 @@
+Nov 21 21:50:01 nefarious-laptop CRON[3488]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 21:50:02 nefarious-laptop CRON[3488]: pam_unix(cron:session): session closed for user root
+Nov 21 21:57:16 nefarious-laptop gdm[2419]: pam_unix(gdm:auth): authentication failure; logname= uid=0 euid=0 tty=:0 ruser= rhost=  user=nefarious
+Nov 21 21:57:23 nefarious-laptop gdm[2419]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 21 21:57:23 nefarious-laptop gdm[2419]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 21 21:58:38 nefarious-laptop dbus-daemon: Rejected send message, 2 matched rules; type="method_call", sender=":1.41" (uid=7 pid=3908 comm="bluetooth ") interface="org.bluez.Manager" member="DefaultAdapter" error name="(unset)" requested_reply=0 destination="org.bluez" (uid=0 pid=2385 comm="/usr/sbin/bluetoothd "))
+Nov 21 22:00:01 nefarious-laptop CRON[3942]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 22:00:01 nefarious-laptop CRON[3948]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 22:00:01 nefarious-laptop CRON[3948]: pam_unix(cron:session): session closed for user root
+Nov 21 22:00:02 nefarious-laptop CRON[3942]: pam_unix(cron:session): session closed for user root
+Nov 21 22:00:05 nefarious-laptop gdm[2419]: pam_unix(gdm:session): session closed for user nefarious
+Nov 21 17:26:26 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2287 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2283 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 21 22:26:44 nefarious-laptop gdm[2262]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 21 22:26:44 nefarious-laptop gdm[2262]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 21 22:27:59 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/tmp/tmpg_eLMY ; USER=root ; COMMAND=/tmp/tmpg_eLMY/karmic
+Nov 21 22:30:01 nefarious-laptop CRON[2994]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 22:30:07 nefarious-laptop CRON[2994]: pam_unix(cron:session): session closed for user root
+Nov 21 22:34:26 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/synaptic
+Nov 21 22:37:19 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/synaptic
+Nov 21 22:37:35 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/synaptic
+Nov 21 22:40:01 nefarious-laptop CRON[3289]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 22:40:04 nefarious-laptop CRON[3289]: pam_unix(cron:session): session closed for user root
+Nov 21 22:42:43 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/synaptic
+Nov 21 22:49:55 nefarious-laptop sudo: nefarious : TTY=unknown ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/synaptic --hide-main-window --non-interactive --parent-window-id 46137384 -o Synaptic::closeZvt=true --progress-str Please wait, this can take some time. --finish-str Update is complete --set-selections-file /tmp/tmpzsnF8J
+Nov 21 22:50:01 nefarious-laptop CRON[3950]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 22:50:03 nefarious-laptop CRON[3950]: pam_unix(cron:session): session closed for user root
+Nov 21 23:10:01 nefarious-laptop CRON[19476]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:10:03 nefarious-laptop CRON[19476]: pam_unix(cron:session): session closed for user root
+Nov 21 23:17:01 nefarious-laptop CRON[19652]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:17:01 nefarious-laptop CRON[19652]: pam_unix(cron:session): session closed for user root
+Nov 21 23:20:01 nefarious-laptop CRON[19724]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:20:02 nefarious-laptop CRON[19724]: pam_unix(cron:session): session closed for user root
+Nov 21 23:30:01 nefarious-laptop CRON[19900]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:30:02 nefarious-laptop CRON[19900]: pam_unix(cron:session): session closed for user root
+Nov 21 23:40:01 nefarious-laptop CRON[20075]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:40:02 nefarious-laptop CRON[20075]: pam_unix(cron:session): session closed for user root
+Nov 21 23:50:01 nefarious-laptop CRON[20250]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 21 23:50:02 nefarious-laptop CRON[20250]: pam_unix(cron:session): session closed for user root
+Nov 22 00:00:01 nefarious-laptop CRON[20426]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:00:01 nefarious-laptop CRON[20431]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:00:01 nefarious-laptop CRON[20433]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:00:01 nefarious-laptop CRON[20436]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:00:02 nefarious-laptop CRON[20433]: pam_unix(cron:session): session closed for user root
+Nov 22 00:00:02 nefarious-laptop CRON[20431]: pam_unix(cron:session): session closed for user root
+Nov 22 00:00:02 nefarious-laptop CRON[20436]: pam_unix(cron:session): session closed for user root
+Nov 22 00:00:02 nefarious-laptop CRON[20426]: pam_unix(cron:session): session closed for user root
+Nov 22 00:10:01 nefarious-laptop CRON[20669]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:10:02 nefarious-laptop CRON[20669]: pam_unix(cron:session): session closed for user root
+Nov 22 00:17:01 nefarious-laptop CRON[20844]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:17:01 nefarious-laptop CRON[20844]: pam_unix(cron:session): session closed for user root
+Nov 22 00:20:01 nefarious-laptop CRON[20916]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:20:02 nefarious-laptop CRON[20916]: pam_unix(cron:session): session closed for user root
+Nov 22 00:30:01 nefarious-laptop CRON[21091]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:30:02 nefarious-laptop CRON[21091]: pam_unix(cron:session): session closed for user root
+Nov 22 00:40:01 nefarious-laptop CRON[21266]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:40:02 nefarious-laptop CRON[21266]: pam_unix(cron:session): session closed for user root
+Nov 22 00:50:02 nefarious-laptop CRON[21442]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 00:50:03 nefarious-laptop CRON[21442]: pam_unix(cron:session): session closed for user root
+Nov 22 01:00:01 nefarious-laptop CRON[21617]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:00:01 nefarious-laptop CRON[21620]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:00:01 nefarious-laptop CRON[21620]: pam_unix(cron:session): session closed for user root
+Nov 22 01:00:01 nefarious-laptop CRON[21617]: pam_unix(cron:session): session closed for user root
+Nov 22 01:10:01 nefarious-laptop CRON[21754]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:10:02 nefarious-laptop CRON[21754]: pam_unix(cron:session): session closed for user root
+Nov 22 01:17:01 nefarious-laptop CRON[21929]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:17:01 nefarious-laptop CRON[21929]: pam_unix(cron:session): session closed for user root
+Nov 22 01:20:01 nefarious-laptop CRON[22001]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:20:02 nefarious-laptop CRON[22001]: pam_unix(cron:session): session closed for user root
+Nov 22 01:30:01 nefarious-laptop CRON[22176]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:30:02 nefarious-laptop CRON[22176]: pam_unix(cron:session): session closed for user root
+Nov 22 01:40:01 nefarious-laptop CRON[22351]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:40:02 nefarious-laptop CRON[22351]: pam_unix(cron:session): session closed for user root
+Nov 22 01:50:01 nefarious-laptop CRON[22526]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 01:50:02 nefarious-laptop CRON[22526]: pam_unix(cron:session): session closed for user root
+Nov 22 02:00:01 nefarious-laptop CRON[22701]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 02:00:01 nefarious-laptop CRON[22704]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 22 02:00:02 nefarious-laptop CRON[22704]: pam_unix(cron:session): session closed for user root
+Nov 22 02:00:02 nefarious-laptop CRON[22701]: pam_unix(cron:session): session closed for user root
+Nov 22 02:03:35 nefarious-laptop sudo: pam_unix(sudo:auth): authentication failure; logname=nefarious uid=0 euid=0 tty=/dev/pts/0 ruser= rhost=  user=nefarious
+Nov 22 02:03:40 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=sudoedit menu.lst
+Nov 22 02:04:35 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=sudoedit menu.lst
+Nov 22 02:04:53 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=sudoedit menu.lst
+Nov 22 02:05:08 nefarious-laptop gdm[2262]: pam_unix(gdm:session): session closed for user nefarious
+Nov 21 22:30:51 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2497 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2490 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 22 03:31:13 nefarious-laptop gdm[2470]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 22 03:31:13 nefarious-laptop gdm[2470]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 22 03:31:55 nefarious-laptop sudo: pam_unix(sudo:auth): conversation failed
+Nov 22 03:31:55 nefarious-laptop sudo: pam_unix(sudo:auth): auth could not identify password for [nefarious]
+Nov 22 03:31:58 nefarious-laptop sudo: pam_unix(sudo:auth): authentication failure; logname=nefarious uid=0 euid=0 tty=/dev/pts/0 ruser= rhost=  user=nefarious
+Nov 22 03:32:13 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=/bin/mount /dev/sda1 /mnt
+Nov 22 03:37:10 nefarious-laptop gdm[2470]: pam_unix(gdm:session): session closed for user nefarious
+Nov 22 03:45:50 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2276 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2272 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 22 03:46:30 nefarious-laptop gdm[2252]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 22 03:46:30 nefarious-laptop gdm[2252]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 22 03:47:05 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=sudoedit menu.lst
+Nov 22 03:47:56 nefarious-laptop gdm[2252]: pam_unix(gdm:session): session closed for user nefarious
+Nov 22 04:41:48 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2268 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2265 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 22 04:42:15 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 22 04:42:15 nefarious-laptop gdm[2244]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 22 04:42:47 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=sudoedit menu.lst
+Nov 22 04:43:02 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session closed for user nefarious
+Nov 23 14:44:09 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2245 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2238 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 23 19:50:01 nefarious-laptop CRON[2610]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 19:50:06 nefarious-laptop CRON[2610]: pam_unix(cron:session): session closed for user root
+Nov 23 19:57:55 nefarious-laptop gdm[2218]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 23 19:57:55 nefarious-laptop gdm[2218]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 23 20:00:01 nefarious-laptop CRON[3100]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 20:00:01 nefarious-laptop CRON[3103]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 20:00:02 nefarious-laptop CRON[3100]: pam_unix(cron:session): session closed for user root
+Nov 23 20:00:06 nefarious-laptop CRON[3103]: pam_unix(cron:session): session closed for user root
+Nov 23 20:01:35 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=/usr/bin/aptitude install flashplugin-installer
+Nov 23 20:10:01 nefarious-laptop CRON[3669]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 20:10:04 nefarious-laptop CRON[3669]: pam_unix(cron:session): session closed for user root
+Nov 23 20:11:53 nefarious-laptop gdm[2218]: pam_unix(gdm:session): session closed for user nefarious
+Nov 23 17:15:47 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2276 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2270 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 23 22:17:01 nefarious-laptop CRON[2645]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 22:17:01 nefarious-laptop CRON[2645]: pam_unix(cron:session): session closed for user root
+Nov 23 22:17:40 nefarious-laptop gdm[2247]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 23 22:17:40 nefarious-laptop gdm[2247]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 23 22:20:01 nefarious-laptop CRON[3052]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 22:20:05 nefarious-laptop CRON[3052]: pam_unix(cron:session): session closed for user root
+Nov 23 22:30:01 nefarious-laptop CRON[3394]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 22:30:06 nefarious-laptop CRON[3394]: pam_unix(cron:session): session closed for user root
+Nov 23 22:32:15 nefarious-laptop sudo: pam_unix(sudo:auth): authentication failure; logname=nefarious uid=0 euid=0 tty=/dev/pts/0 ruser= rhost=  user=nefarious
+Nov 23 22:32:34 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=/usr/bin/apt-get install pidgin
+Nov 23 22:32:43 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/boot/grub ; USER=root ; COMMAND=/usr/bin/apt-get install ruby
+Nov 23 22:39:41 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/Desktop/msf3 ; USER=root ; COMMAND=/usr/bin/apt-get install libruby libyaml-ruby libzlib-ruby libopenssl-ruby libdl-ruby libreadline-ruby libiconv-ruby rubygems
+Nov 23 22:40:02 nefarious-laptop CRON[3949]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 22:40:05 nefarious-laptop CRON[3949]: pam_unix(cron:session): session closed for user root
+Nov 23 22:47:22 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/use_http_proxy
+Nov 23 22:47:23 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/host
+Nov 23 22:47:23 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/port
+Nov 23 22:50:01 nefarious-laptop CRON[4404]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 22:50:03 nefarious-laptop CRON[4404]: pam_unix(cron:session): session closed for user root
+Nov 23 23:00:01 nefarious-laptop CRON[4622]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:00:02 nefarious-laptop CRON[4628]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:00:02 nefarious-laptop CRON[4622]: pam_unix(cron:session): session closed for user root
+Nov 23 23:00:04 nefarious-laptop CRON[4628]: pam_unix(cron:session): session closed for user root
+Nov 23 23:10:01 nefarious-laptop CRON[4938]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:10:03 nefarious-laptop CRON[4938]: pam_unix(cron:session): session closed for user root
+Nov 23 23:17:01 nefarious-laptop CRON[5154]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:17:02 nefarious-laptop CRON[5154]: pam_unix(cron:session): session closed for user root
+Nov 23 23:20:01 nefarious-laptop CRON[5279]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:20:03 nefarious-laptop CRON[5279]: pam_unix(cron:session): session closed for user root
+Nov 23 23:30:01 nefarious-laptop CRON[5498]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:30:03 nefarious-laptop CRON[5498]: pam_unix(cron:session): session closed for user root
+Nov 23 23:40:01 nefarious-laptop CRON[5714]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:40:02 nefarious-laptop CRON[5714]: pam_unix(cron:session): session closed for user root
+Nov 23 23:50:01 nefarious-laptop CRON[5929]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 23 23:50:03 nefarious-laptop CRON[5929]: pam_unix(cron:session): session closed for user root
+Nov 24 00:00:01 nefarious-laptop CRON[6144]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:00:01 nefarious-laptop CRON[6146]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:00:01 nefarious-laptop CRON[6151]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:00:01 nefarious-laptop CRON[6146]: pam_unix(cron:session): session closed for user root
+Nov 24 00:00:01 nefarious-laptop CRON[6144]: pam_unix(cron:session): session closed for user root
+Nov 24 00:00:03 nefarious-laptop CRON[6151]: pam_unix(cron:session): session closed for user root
+Nov 24 00:10:01 nefarious-laptop CRON[6691]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:10:02 nefarious-laptop CRON[6691]: pam_unix(cron:session): session closed for user root
+Nov 24 00:17:01 nefarious-laptop CRON[6927]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:17:01 nefarious-laptop CRON[6927]: pam_unix(cron:session): session closed for user root
+Nov 24 00:20:01 nefarious-laptop CRON[7094]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 00:20:03 nefarious-laptop CRON[7094]: pam_unix(cron:session): session closed for user root
+Nov 24 00:21:10 nefarious-laptop gdm[2247]: pam_unix(gdm:session): session closed for user nefarious
+Nov 23 21:10:11 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2278 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2272 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 02:11:47 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 02:11:47 nefarious-laptop gdm[2253]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 02:17:01 nefarious-laptop CRON[3111]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 02:17:01 nefarious-laptop CRON[3111]: pam_unix(cron:session): session closed for user root
+Nov 24 02:20:01 nefarious-laptop CRON[3280]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 02:20:03 nefarious-laptop CRON[3280]: pam_unix(cron:session): session closed for user root
+Nov 24 02:20:31 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/use_http_proxy
+Nov 24 02:20:31 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/host
+Nov 24 02:20:31 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/port
+Nov 24 02:30:01 nefarious-laptop CRON[3687]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 02:30:03 nefarious-laptop CRON[3687]: pam_unix(cron:session): session closed for user root
+Nov 24 02:40:01 nefarious-laptop CRON[3903]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 02:40:03 nefarious-laptop CRON[3903]: pam_unix(cron:session): session closed for user root
+Nov 24 02:50:01 nefarious-laptop CRON[4118]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 02:50:02 nefarious-laptop CRON[4118]: pam_unix(cron:session): session closed for user root
+Nov 24 03:00:01 nefarious-laptop CRON[4333]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:00:01 nefarious-laptop CRON[4335]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:00:02 nefarious-laptop CRON[4333]: pam_unix(cron:session): session closed for user root
+Nov 24 03:00:04 nefarious-laptop CRON[4335]: pam_unix(cron:session): session closed for user root
+Nov 24 03:10:01 nefarious-laptop CRON[4648]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:10:02 nefarious-laptop CRON[4648]: pam_unix(cron:session): session closed for user root
+Nov 24 03:17:01 nefarious-laptop CRON[4863]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:17:02 nefarious-laptop CRON[4863]: pam_unix(cron:session): session closed for user root
+Nov 24 03:20:01 nefarious-laptop CRON[4988]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:20:02 nefarious-laptop CRON[4988]: pam_unix(cron:session): session closed for user root
+Nov 24 03:30:01 nefarious-laptop CRON[5203]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:30:03 nefarious-laptop CRON[5203]: pam_unix(cron:session): session closed for user root
+Nov 24 03:40:01 nefarious-laptop CRON[5418]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:40:02 nefarious-laptop CRON[5418]: pam_unix(cron:session): session closed for user root
+Nov 24 03:50:01 nefarious-laptop CRON[5633]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 03:50:02 nefarious-laptop CRON[5633]: pam_unix(cron:session): session closed for user root
+Nov 24 04:00:01 nefarious-laptop CRON[5848]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:00:01 nefarious-laptop CRON[5850]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:00:02 nefarious-laptop CRON[5848]: pam_unix(cron:session): session closed for user root
+Nov 24 04:00:03 nefarious-laptop CRON[5850]: pam_unix(cron:session): session closed for user root
+Nov 24 04:10:01 nefarious-laptop CRON[6163]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:10:03 nefarious-laptop CRON[6163]: pam_unix(cron:session): session closed for user root
+Nov 24 04:17:01 nefarious-laptop CRON[6378]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:17:01 nefarious-laptop CRON[6378]: pam_unix(cron:session): session closed for user root
+Nov 24 04:20:01 nefarious-laptop CRON[6503]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:20:02 nefarious-laptop CRON[6503]: pam_unix(cron:session): session closed for user root
+Nov 24 04:30:01 nefarious-laptop CRON[6718]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:30:03 nefarious-laptop CRON[6718]: pam_unix(cron:session): session closed for user root
+Nov 24 04:40:01 nefarious-laptop CRON[6933]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:40:02 nefarious-laptop CRON[6933]: pam_unix(cron:session): session closed for user root
+Nov 24 04:50:01 nefarious-laptop CRON[7148]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 04:50:02 nefarious-laptop CRON[7148]: pam_unix(cron:session): session closed for user root
+Nov 24 05:00:01 nefarious-laptop CRON[7363]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:00:01 nefarious-laptop CRON[7365]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:00:02 nefarious-laptop CRON[7363]: pam_unix(cron:session): session closed for user root
+Nov 24 05:00:03 nefarious-laptop CRON[7365]: pam_unix(cron:session): session closed for user root
+Nov 24 05:10:01 nefarious-laptop CRON[7678]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:10:03 nefarious-laptop CRON[7678]: pam_unix(cron:session): session closed for user root
+Nov 24 05:17:01 nefarious-laptop CRON[7893]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:17:01 nefarious-laptop CRON[7893]: pam_unix(cron:session): session closed for user root
+Nov 24 05:20:01 nefarious-laptop CRON[8018]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:20:02 nefarious-laptop CRON[8018]: pam_unix(cron:session): session closed for user root
+Nov 24 05:30:01 nefarious-laptop CRON[8233]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:30:03 nefarious-laptop CRON[8233]: pam_unix(cron:session): session closed for user root
+Nov 24 05:40:01 nefarious-laptop CRON[8448]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:40:02 nefarious-laptop CRON[8448]: pam_unix(cron:session): session closed for user root
+Nov 24 05:50:01 nefarious-laptop CRON[8663]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 05:50:02 nefarious-laptop CRON[8663]: pam_unix(cron:session): session closed for user root
+Nov 24 06:00:01 nefarious-laptop CRON[8878]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:00:01 nefarious-laptop CRON[8880]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:00:02 nefarious-laptop CRON[8878]: pam_unix(cron:session): session closed for user root
+Nov 24 06:00:03 nefarious-laptop CRON[8880]: pam_unix(cron:session): session closed for user root
+Nov 24 06:10:01 nefarious-laptop CRON[9193]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:10:03 nefarious-laptop CRON[9193]: pam_unix(cron:session): session closed for user root
+Nov 24 06:17:01 nefarious-laptop CRON[9408]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:17:01 nefarious-laptop CRON[9408]: pam_unix(cron:session): session closed for user root
+Nov 24 06:20:01 nefarious-laptop CRON[9533]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:20:02 nefarious-laptop CRON[9533]: pam_unix(cron:session): session closed for user root
+Nov 24 06:25:01 nefarious-laptop CRON[9748]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:25:01 nefarious-laptop CRON[9748]: pam_unix(cron:session): session closed for user root
+Nov 24 06:30:01 nefarious-laptop CRON[9872]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:30:03 nefarious-laptop CRON[9872]: pam_unix(cron:session): session closed for user root
+Nov 24 06:40:01 nefarious-laptop CRON[10087]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:40:02 nefarious-laptop CRON[10087]: pam_unix(cron:session): session closed for user root
+Nov 24 06:50:01 nefarious-laptop CRON[10302]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 06:50:02 nefarious-laptop CRON[10302]: pam_unix(cron:session): session closed for user root
+Nov 24 07:00:01 nefarious-laptop CRON[10517]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:00:02 nefarious-laptop CRON[10519]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:00:02 nefarious-laptop CRON[10519]: pam_unix(cron:session): session closed for user root
+Nov 24 07:00:02 nefarious-laptop CRON[10517]: pam_unix(cron:session): session closed for user root
+Nov 24 07:10:01 nefarious-laptop CRON[10742]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:10:02 nefarious-laptop CRON[10742]: pam_unix(cron:session): session closed for user root
+Nov 24 07:17:01 nefarious-laptop CRON[10957]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:17:02 nefarious-laptop CRON[10957]: pam_unix(cron:session): session closed for user root
+Nov 24 07:20:01 nefarious-laptop CRON[11082]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:20:02 nefarious-laptop CRON[11082]: pam_unix(cron:session): session closed for user root
+Nov 24 07:30:01 nefarious-laptop CRON[11297]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:30:01 nefarious-laptop CRON[11299]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:30:01 nefarious-laptop CRON[11299]: pam_unix(cron:session): session closed for user root
+Nov 24 07:30:03 nefarious-laptop CRON[11297]: pam_unix(cron:session): session closed for user root
+Nov 24 07:40:01 nefarious-laptop CRON[11626]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:40:02 nefarious-laptop CRON[11626]: pam_unix(cron:session): session closed for user root
+Nov 24 07:50:01 nefarious-laptop CRON[11841]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 07:50:03 nefarious-laptop CRON[11841]: pam_unix(cron:session): session closed for user root
+Nov 24 08:00:01 nefarious-laptop CRON[12056]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:00:01 nefarious-laptop CRON[12058]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:00:01 nefarious-laptop CRON[12056]: pam_unix(cron:session): session closed for user root
+Nov 24 08:00:03 nefarious-laptop CRON[12058]: pam_unix(cron:session): session closed for user root
+Nov 24 08:10:01 nefarious-laptop CRON[12371]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:10:02 nefarious-laptop CRON[12371]: pam_unix(cron:session): session closed for user root
+Nov 24 08:17:01 nefarious-laptop CRON[12586]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:17:01 nefarious-laptop CRON[12586]: pam_unix(cron:session): session closed for user root
+Nov 24 08:20:01 nefarious-laptop CRON[12711]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:20:03 nefarious-laptop CRON[12711]: pam_unix(cron:session): session closed for user root
+Nov 24 08:30:01 nefarious-laptop CRON[12926]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:30:02 nefarious-laptop CRON[12926]: pam_unix(cron:session): session closed for user root
+Nov 24 08:40:01 nefarious-laptop CRON[13141]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:40:02 nefarious-laptop CRON[13141]: pam_unix(cron:session): session closed for user root
+Nov 24 08:50:01 nefarious-laptop CRON[13356]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 08:50:03 nefarious-laptop CRON[13356]: pam_unix(cron:session): session closed for user root
+Nov 24 09:00:01 nefarious-laptop CRON[13571]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:00:01 nefarious-laptop CRON[13573]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:00:01 nefarious-laptop CRON[13571]: pam_unix(cron:session): session closed for user root
+Nov 24 09:00:03 nefarious-laptop CRON[13573]: pam_unix(cron:session): session closed for user root
+Nov 24 09:10:01 nefarious-laptop CRON[13886]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:10:02 nefarious-laptop CRON[13886]: pam_unix(cron:session): session closed for user root
+Nov 24 09:17:01 nefarious-laptop CRON[14101]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:17:01 nefarious-laptop CRON[14101]: pam_unix(cron:session): session closed for user root
+Nov 24 09:20:01 nefarious-laptop CRON[14226]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:20:03 nefarious-laptop CRON[14226]: pam_unix(cron:session): session closed for user root
+Nov 24 09:30:01 nefarious-laptop CRON[14441]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:30:02 nefarious-laptop CRON[14441]: pam_unix(cron:session): session closed for user root
+Nov 24 09:40:01 nefarious-laptop CRON[14656]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:40:02 nefarious-laptop CRON[14656]: pam_unix(cron:session): session closed for user root
+Nov 24 09:50:02 nefarious-laptop CRON[14871]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 09:50:03 nefarious-laptop CRON[14871]: pam_unix(cron:session): session closed for user root
+Nov 24 10:00:01 nefarious-laptop CRON[15086]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:00:01 nefarious-laptop CRON[15088]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:00:01 nefarious-laptop CRON[15086]: pam_unix(cron:session): session closed for user root
+Nov 24 10:00:03 nefarious-laptop CRON[15088]: pam_unix(cron:session): session closed for user root
+Nov 24 10:10:01 nefarious-laptop CRON[15401]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:10:02 nefarious-laptop CRON[15401]: pam_unix(cron:session): session closed for user root
+Nov 24 10:17:01 nefarious-laptop CRON[15616]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:17:01 nefarious-laptop CRON[15616]: pam_unix(cron:session): session closed for user root
+Nov 24 10:20:01 nefarious-laptop CRON[15741]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:20:03 nefarious-laptop CRON[15741]: pam_unix(cron:session): session closed for user root
+Nov 24 10:30:01 nefarious-laptop CRON[15956]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:30:02 nefarious-laptop CRON[15956]: pam_unix(cron:session): session closed for user root
+Nov 24 10:40:01 nefarious-laptop CRON[16171]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:40:02 nefarious-laptop CRON[16171]: pam_unix(cron:session): session closed for user root
+Nov 24 10:50:01 nefarious-laptop CRON[16386]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 10:50:02 nefarious-laptop CRON[16386]: pam_unix(cron:session): session closed for user root
+Nov 24 11:00:01 nefarious-laptop CRON[16601]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:00:01 nefarious-laptop CRON[16603]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:00:01 nefarious-laptop CRON[16601]: pam_unix(cron:session): session closed for user root
+Nov 24 11:00:03 nefarious-laptop CRON[16603]: pam_unix(cron:session): session closed for user root
+Nov 24 11:10:01 nefarious-laptop CRON[16916]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:10:02 nefarious-laptop CRON[16916]: pam_unix(cron:session): session closed for user root
+Nov 24 11:17:01 nefarious-laptop CRON[17131]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:17:01 nefarious-laptop CRON[17131]: pam_unix(cron:session): session closed for user root
+Nov 24 11:20:01 nefarious-laptop CRON[17256]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:20:03 nefarious-laptop CRON[17256]: pam_unix(cron:session): session closed for user root
+Nov 24 11:30:01 nefarious-laptop CRON[17471]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:30:02 nefarious-laptop CRON[17471]: pam_unix(cron:session): session closed for user root
+Nov 24 11:40:01 nefarious-laptop CRON[17686]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:40:02 nefarious-laptop CRON[17686]: pam_unix(cron:session): session closed for user root
+Nov 24 11:50:01 nefarious-laptop CRON[17902]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 11:50:03 nefarious-laptop CRON[17902]: pam_unix(cron:session): session closed for user root
+Nov 24 12:00:01 nefarious-laptop CRON[18117]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:00:01 nefarious-laptop CRON[18119]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:00:01 nefarious-laptop CRON[18119]: pam_unix(cron:session): session closed for user root
+Nov 24 12:00:01 nefarious-laptop CRON[18117]: pam_unix(cron:session): session closed for user root
+Nov 24 12:10:01 nefarious-laptop CRON[18342]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:10:03 nefarious-laptop CRON[18342]: pam_unix(cron:session): session closed for user root
+Nov 24 12:17:01 nefarious-laptop CRON[18557]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:17:01 nefarious-laptop CRON[18557]: pam_unix(cron:session): session closed for user root
+Nov 24 12:20:01 nefarious-laptop CRON[18682]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:20:02 nefarious-laptop CRON[18682]: pam_unix(cron:session): session closed for user root
+Nov 24 12:30:01 nefarious-laptop CRON[18897]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:30:03 nefarious-laptop CRON[18897]: pam_unix(cron:session): session closed for user root
+Nov 24 12:40:01 nefarious-laptop CRON[19112]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:40:02 nefarious-laptop CRON[19112]: pam_unix(cron:session): session closed for user root
+Nov 24 12:50:01 nefarious-laptop CRON[19327]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 12:50:02 nefarious-laptop CRON[19327]: pam_unix(cron:session): session closed for user root
+Nov 24 13:00:01 nefarious-laptop CRON[19542]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:00:01 nefarious-laptop CRON[19544]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:00:02 nefarious-laptop CRON[19544]: pam_unix(cron:session): session closed for user root
+Nov 24 13:00:02 nefarious-laptop CRON[19542]: pam_unix(cron:session): session closed for user root
+Nov 24 13:10:01 nefarious-laptop CRON[19767]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:10:02 nefarious-laptop CRON[19767]: pam_unix(cron:session): session closed for user root
+Nov 24 13:17:01 nefarious-laptop CRON[19982]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:17:02 nefarious-laptop CRON[19982]: pam_unix(cron:session): session closed for user root
+Nov 24 13:20:01 nefarious-laptop CRON[20107]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:20:03 nefarious-laptop CRON[20107]: pam_unix(cron:session): session closed for user root
+Nov 24 13:30:01 nefarious-laptop CRON[20322]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:30:02 nefarious-laptop CRON[20322]: pam_unix(cron:session): session closed for user root
+Nov 24 13:40:01 nefarious-laptop CRON[20537]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:40:02 nefarious-laptop CRON[20537]: pam_unix(cron:session): session closed for user root
+Nov 24 13:50:01 nefarious-laptop CRON[20752]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 13:50:03 nefarious-laptop CRON[20752]: pam_unix(cron:session): session closed for user root
+Nov 24 14:00:01 nefarious-laptop CRON[20967]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 14:00:01 nefarious-laptop CRON[20969]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 14:00:01 nefarious-laptop CRON[20969]: pam_unix(cron:session): session closed for user root
+Nov 24 14:00:01 nefarious-laptop CRON[20967]: pam_unix(cron:session): session closed for user root
+Nov 24 14:10:01 nefarious-laptop CRON[21192]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 14:10:03 nefarious-laptop CRON[21192]: pam_unix(cron:session): session closed for user root
+Nov 24 14:17:01 nefarious-laptop CRON[21407]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 14:17:01 nefarious-laptop CRON[21407]: pam_unix(cron:session): session closed for user root
+Nov 24 14:17:45 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 16:29:59 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2277 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2272 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 21:34:10 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 21:34:10 nefarious-laptop gdm[2253]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 21:40:01 nefarious-laptop CRON[3130]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 21:40:03 nefarious-laptop CRON[3130]: pam_unix(cron:session): session closed for user root
+Nov 24 21:50:01 nefarious-laptop CRON[3345]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 21:50:02 nefarious-laptop CRON[3345]: pam_unix(cron:session): session closed for user root
+Nov 24 22:00:01 nefarious-laptop CRON[3568]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:00:01 nefarious-laptop CRON[3570]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:00:02 nefarious-laptop CRON[3568]: pam_unix(cron:session): session closed for user root
+Nov 24 22:00:03 nefarious-laptop CRON[3570]: pam_unix(cron:session): session closed for user root
+Nov 24 22:10:01 nefarious-laptop CRON[3885]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:10:02 nefarious-laptop CRON[3885]: pam_unix(cron:session): session closed for user root
+Nov 24 22:17:01 nefarious-laptop CRON[4101]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:17:01 nefarious-laptop CRON[4101]: pam_unix(cron:session): session closed for user root
+Nov 24 22:20:01 nefarious-laptop CRON[4226]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:20:02 nefarious-laptop CRON[4226]: pam_unix(cron:session): session closed for user root
+Nov 24 22:30:01 nefarious-laptop CRON[4441]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:30:02 nefarious-laptop CRON[4441]: pam_unix(cron:session): session closed for user root
+Nov 24 22:40:01 nefarious-laptop CRON[4656]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:40:03 nefarious-laptop CRON[4656]: pam_unix(cron:session): session closed for user root
+Nov 24 22:50:01 nefarious-laptop CRON[4872]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:50:03 nefarious-laptop CRON[4872]: pam_unix(cron:session): session closed for user root
+Nov 24 23:00:01 nefarious-laptop CRON[5087]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:00:01 nefarious-laptop CRON[5089]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:00:02 nefarious-laptop CRON[5087]: pam_unix(cron:session): session closed for user root
+Nov 24 23:00:03 nefarious-laptop CRON[5089]: pam_unix(cron:session): session closed for user root
+Nov 24 23:10:01 nefarious-laptop CRON[5438]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:10:03 nefarious-laptop CRON[5438]: pam_unix(cron:session): session closed for user root
+Nov 24 23:17:01 nefarious-laptop CRON[5654]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:17:01 nefarious-laptop CRON[5654]: pam_unix(cron:session): session closed for user root
+Nov 24 23:20:01 nefarious-laptop CRON[5779]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:20:02 nefarious-laptop CRON[5779]: pam_unix(cron:session): session closed for user root
+Nov 24 23:30:01 nefarious-laptop CRON[5994]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:30:02 nefarious-laptop CRON[5994]: pam_unix(cron:session): session closed for user root
+Nov 24 23:40:01 nefarious-laptop CRON[6209]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:40:02 nefarious-laptop CRON[6209]: pam_unix(cron:session): session closed for user root
+Nov 24 23:50:01 nefarious-laptop CRON[6424]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:50:02 nefarious-laptop CRON[6424]: pam_unix(cron:session): session closed for user root
+Nov 25 00:00:01 nefarious-laptop CRON[6639]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:00:01 nefarious-laptop CRON[6641]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:00:01 nefarious-laptop CRON[6646]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:00:02 nefarious-laptop CRON[6639]: pam_unix(cron:session): session closed for user root
+Nov 25 00:00:02 nefarious-laptop CRON[6641]: pam_unix(cron:session): session closed for user root
+Nov 25 00:00:03 nefarious-laptop CRON[6646]: pam_unix(cron:session): session closed for user root
+Nov 25 00:10:01 nefarious-laptop CRON[7055]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:10:02 nefarious-laptop CRON[7055]: pam_unix(cron:session): session closed for user root
+Nov 25 00:17:01 nefarious-laptop CRON[7270]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:17:01 nefarious-laptop CRON[7270]: pam_unix(cron:session): session closed for user root
+Nov 25 00:18:17 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 19:32:41 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2271 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2265 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 00:35:37 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 00:35:37 nefarious-laptop gdm[2244]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 00:40:01 nefarious-laptop CRON[2937]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:40:03 nefarious-laptop CRON[2937]: pam_unix(cron:session): session closed for user root
+Nov 25 00:44:09 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/bin/aptitude install irssi
+Nov 25 00:50:01 nefarious-laptop CRON[3254]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 00:50:02 nefarious-laptop CRON[3254]: pam_unix(cron:session): session closed for user root
+Nov 25 00:52:23 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 20:52:37 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2272 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2266 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 01:53:23 nefarious-laptop gdm[2246]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 01:53:23 nefarious-laptop gdm[2246]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 01:57:09 nefarious-laptop gdm[2246]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 21:22:41 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2244 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2238 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 21:22:58 nefarious-laptop gdm[2216]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 21:22:58 nefarious-laptop gdm[2216]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 21:25:50 nefarious-laptop gdm[2216]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 21:27:33 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2245 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 02:28:53 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 02:28:53 nefarious-laptop gdm[2213]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 02:30:01 nefarious-laptop CRON[2899]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 02:30:07 nefarious-laptop CRON[2899]: pam_unix(cron:session): session closed for user root
+Nov 25 02:35:39 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=sudoedit /etc/ssh/ssh_config
+Nov 25 02:38:15 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=sudoedit /etc/ssh/ssh_config
+Nov 25 02:40:01 nefarious-laptop CRON[3183]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 02:40:04 nefarious-laptop CRON[3183]: pam_unix(cron:session): session closed for user root
+Nov 25 02:42:56 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session closed for user nefarious
+Nov 25 02:43:55 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2245 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 03:17:01 nefarious-laptop CRON[2568]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 03:17:01 nefarious-laptop CRON[2568]: pam_unix(cron:session): session closed for user root
+Nov 25 03:20:01 nefarious-laptop CRON[2622]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 03:20:04 nefarious-laptop CRON[2622]: pam_unix(cron:session): session closed for user root
+Nov 25 03:27:25 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 03:27:25 nefarious-laptop gdm[2213]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 03:28:36 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 22:30:52 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2246 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2238 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 03:31:20 nefarious-laptop gdm[2215]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 03:31:20 nefarious-laptop gdm[2215]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 03:33:59 nefarious-laptop gdm[2215]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 22:35:41 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2243 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 22:37:40 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 22:37:40 nefarious-laptop gdm[2213]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 22:39:17 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/sbin/ifconfig eth0 essid 141.212.111.41
+Nov 24 22:39:22 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/sbin/ifconfig eth0 141.212.111.41
+Nov 24 22:39:46 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 22:43:38 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2244 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 22:44:57 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 22:44:57 nefarious-laptop gdm[2213]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 22:46:54 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/etc/init.d/networking restart
+Nov 24 22:47:05 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/etc/init.d/NetworkManager restart
+Nov 24 22:48:07 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 22:49:10 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2244 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 22:49:34 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 22:49:34 nefarious-laptop gdm[2213]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 22:50:01 nefarious-laptop CRON[2869]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 22:50:17 nefarious-laptop CRON[2869]: pam_unix(cron:session): session closed for user root
+Nov 24 22:51:21 nefarious-laptop gdm[2213]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 22:53:27 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2244 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2237 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 03:53:42 nefarious-laptop gdm[2214]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 03:53:42 nefarious-laptop gdm[2214]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 03:55:15 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/usr/bin/aptitude install libssh-2
+Nov 25 03:55:49 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/usr/bin/aptitude install libssh-2-dev
+Nov 25 03:56:26 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/usr/bin/aptitude install libssl-dev
+Nov 25 04:00:01 nefarious-laptop CRON[4541]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 04:00:01 nefarious-laptop CRON[4543]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 04:00:02 nefarious-laptop CRON[4541]: pam_unix(cron:session): session closed for user root
+Nov 25 04:00:13 nefarious-laptop CRON[4543]: pam_unix(cron:session): session closed for user root
+Nov 25 04:00:49 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/usr/bin/apt-get install apt-file
+Nov 25 04:01:17 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/usr/bin/apt-file update
+Nov 25 04:07:19 nefarious-laptop gdm[2214]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 23:08:41 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2279 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2273 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 23:09:02 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 23:09:02 nefarious-laptop gdm[2253]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 23:09:53 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/sbin/ifconfig wlan0 141.212.111.41
+Nov 24 23:09:57 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/sbin/ifconfig eth0 141.212.111.41
+Nov 24 23:10:01 nefarious-laptop CRON[2924]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:10:03 nefarious-laptop CRON[2924]: pam_unix(cron:session): session closed for user root
+Nov 24 23:17:01 nefarious-laptop CRON[16806]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:17:01 nefarious-laptop CRON[16806]: pam_unix(cron:session): session closed for user root
+Nov 24 23:20:01 nefarious-laptop CRON[25751]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:20:03 nefarious-laptop CRON[25751]: pam_unix(cron:session): session closed for user root
+Nov 24 23:27:24 nefarious-laptop gdm[2253]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 23:28:52 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2270 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2265 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 04:29:21 nefarious-laptop gdm[2246]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 04:29:21 nefarious-laptop gdm[2246]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 04:30:01 nefarious-laptop CRON[2929]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 04:30:06 nefarious-laptop CRON[2929]: pam_unix(cron:session): session closed for user root
+Nov 25 04:34:47 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/use_http_proxy
+Nov 25 04:34:47 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/host
+Nov 25 04:34:47 nefarious-laptop sudo:     root : TTY=unknown ; PWD=/ ; USER=nefarious ; COMMAND=/usr/bin/gconftool --get /system/http_proxy/port
+Nov 25 04:35:08 nefarious-laptop gdm[2246]: pam_unix(gdm:session): session closed for user nefarious
+Nov 24 23:36:35 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.9" (uid=0 pid=2275 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2270 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 24 23:36:44 nefarious-laptop gdm[2250]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 24 23:36:44 nefarious-laptop gdm[2250]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 24 23:37:30 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/sbin/ifconfig eth0 141.212.111.41
+Nov 24 23:40:01 nefarious-laptop CRON[3155]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 24 23:40:04 nefarious-laptop CRON[3155]: pam_unix(cron:session): session closed for user root
+Nov 24 23:41:02 nefarious-laptop gdm[2250]: pam_unix(gdm:session): session closed for user nefarious
+Nov 25 08:45:28 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2271 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2265 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 13:45:49 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 13:45:49 nefarious-laptop gdm[2244]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 13:50:01 nefarious-laptop CRON[2959]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 13:50:04 nefarious-laptop CRON[2959]: pam_unix(cron:session): session closed for user root
+Nov 25 14:00:01 nefarious-laptop CRON[3199]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 14:00:01 nefarious-laptop CRON[3201]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 14:00:01 nefarious-laptop CRON[3199]: pam_unix(cron:session): session closed for user root
+Nov 25 14:00:03 nefarious-laptop CRON[3201]: pam_unix(cron:session): session closed for user root
+Nov 25 14:09:00 nefarious-laptop gdm[2244]: pam_unix(gdm:session): session closed for user nefarious
+Nov 25 09:14:16 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.11" (uid=0 pid=2283 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2274 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 25 09:14:30 nefarious-laptop gdm[2255]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 25 09:14:30 nefarious-laptop gdm[2255]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 25 09:15:18 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious/hydra-5.4-src ; USER=root ; COMMAND=/sbin/ifconfig eth0 141.212.111.41
+Nov 25 09:17:01 nefarious-laptop CRON[2988]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 09:17:01 nefarious-laptop CRON[2988]: pam_unix(cron:session): session closed for user root
+Nov 25 09:20:01 nefarious-laptop CRON[3400]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 09:20:04 nefarious-laptop CRON[3400]: pam_unix(cron:session): session closed for user root
+Nov 25 09:30:01 nefarious-laptop CRON[4522]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 09:30:03 nefarious-laptop CRON[4522]: pam_unix(cron:session): session closed for user root
+Nov 25 09:40:01 nefarious-laptop CRON[5654]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 09:40:02 nefarious-laptop CRON[5654]: pam_unix(cron:session): session closed for user root
+Nov 25 09:50:01 nefarious-laptop CRON[6327]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 09:50:02 nefarious-laptop CRON[6327]: pam_unix(cron:session): session closed for user root
+Nov 25 10:00:01 nefarious-laptop CRON[6543]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:00:01 nefarious-laptop CRON[6545]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:00:02 nefarious-laptop CRON[6543]: pam_unix(cron:session): session closed for user root
+Nov 25 10:00:03 nefarious-laptop CRON[6545]: pam_unix(cron:session): session closed for user root
+Nov 25 10:10:01 nefarious-laptop CRON[6858]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:10:02 nefarious-laptop CRON[6858]: pam_unix(cron:session): session closed for user root
+Nov 25 10:17:01 nefarious-laptop CRON[7073]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:17:01 nefarious-laptop CRON[7073]: pam_unix(cron:session): session closed for user root
+Nov 25 10:20:01 nefarious-laptop CRON[7198]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:20:02 nefarious-laptop CRON[7198]: pam_unix(cron:session): session closed for user root
+Nov 25 10:30:01 nefarious-laptop CRON[7413]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 25 10:30:02 nefarious-laptop CRON[7413]: pam_unix(cron:session): session closed for user root
+Nov 25 10:36:49 nefarious-laptop gdm[2255]: pam_unix(gdm:session): session closed for user nefarious
+Nov 30 12:11:54 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.10" (uid=0 pid=2269 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.8" (uid=0 pid=2264 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 30 12:12:55 nefarious-laptop gdm[2243]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 30 12:12:55 nefarious-laptop gdm[2243]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 30 12:14:17 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/filefrag evil_plan.bmp
+Nov 30 12:14:41 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/filefrag /home/nefarious/Documents/evil_plan.bmp
+Nov 30 12:14:49 nefarious-laptop sudo: nefarious : TTY=pts/0 ; PWD=/home/nefarious ; USER=root ; COMMAND=/usr/sbin/filefrag evil_plan.bmp
+Nov 30 12:16:47 nefarious-laptop gdm[2243]: pam_unix(gdm:session): session closed for user nefarious
+Nov 29 16:14:45 nefarious-laptop dbus-daemon: Rejected send message, 4 matched rules; type="error", sender=":1.8" (uid=0 pid=2299 comm="/sbin/wpa_supplicant -u -f /var/log/wpa_supplicant") interface="(unset)" member="(unset)" error name="fi.epitest.hostap.WPASupplicant.InvalidInterface" requested_reply=0 destination=":1.7" (uid=0 pid=2292 comm="/usr/sbin/NetworkManager --pid-file /var/run/Netwo"))
+Nov 29 16:14:52 nefarious-laptop gdm[2271]: pam_unix(gdm:session): session opened for user nefarious by (uid=0)
+Nov 29 16:14:52 nefarious-laptop gdm[2271]: pam_ck_connector(gdm:session): nox11 mode, ignoring PAM_TTY :0
+Nov 29 16:14:57 nefarious-laptop gnome-keyring-daemon[2562]: adding removable location: volume_label_VBOXADDITIONS_4_3_10_93012 at /media/cdrom0
+Nov 29 16:17:01 nefarious-laptop CRON[2944]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 29 16:17:01 nefarious-laptop CRON[2944]: pam_unix(cron:session): session closed for user root
+Nov 29 16:20:01 nefarious-laptop CRON[3111]: pam_unix(cron:session): session opened for user root by (uid=0)
+Nov 29 16:20:02 nefarious-laptop CRON[3111]: pam_unix(cron:session): session closed for user root
+Nov 29 16:22:33 nefarious-laptop gdm[2271]: pam_unix(gdm:session): session closed for user nefarious

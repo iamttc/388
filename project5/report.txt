@@ -14,7 +14,39 @@
 
 7. The subject deleted multiple password files under '/3/home/nefarious' including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
 
-8. 
+8. Nov 21 21:50:01: first nefarious session
+Nov 21 22:34:26: installed synaptic package manager
+
+Nov 23 20:01:35: installed flash
+Nov 23 22:32:34: installed pidgin
+Nov 23 22:32:43: installed ruby
+Nov 23 22:47:22: configured proxy
+
+Nov 24 02:20:31: configured proxy
+Nov 24 22:39:17: set eth0 essid 141.212.111.41
+Nov 24 22:39:22: set eth0 address to 141.212.111.41
+Nov 24 23:09:53: hydra usage
+Nov 24 23:09:57: hydra usage
+Nov 24 23:09:57: set wlan0 address to 141.212.111.41
+Nov 24 23:09:57: set eth0 address to 141.212.111.41
+Nov 24 23:37:30: set eth0 address to 141.212.111.41
+
+Nov 25 02:35:39: configured ssh
+Nov 25 02:38:15: configured ssh
+Nov 25 03:55:15: hydra usage
+Nov 25 03:55:49: hydra usage
+Nov 25 03:56:26: hydra usage
+Nov 25 04:00:49: hydra usage
+Nov 25 04:01:17: hydra usage
+Nov 25 04:34:47: configured proxy settings
+Nov 25 09:15:18: hydra usage
+
+Nov 29 16:14:57: removable disk used ('/media/cdrom0')
+
+Nov 30 12:14:17: interaction with evil_plan.bmp
+Nov 30 12:16:47: last nefarious session closed
+
+Evidence in 8a.txt.
 
 9. In the '/3/home/nefarious/.thumbnails/normal' folder, there were .png files containing the drawing of the attack. It depicts 'hapless victim' being shot by the subject. Evidence is 9a.png. Additionally, inside the firefox installation (evidence 6*.txt), there was evidence of Nefarious googling and downloading the metasploit framework 3, were found in his home directory under 'msf3'. Along with this malicious tool, the remote login cracking program Hydra (and a list of passwords to try) was found in Nefarious's home directory, which he probably used to gain access to the machine discussed in Part 2.
 
