@@ -14,37 +14,54 @@
 
 7. The subject deleted multiple password files under '/3/home/nefarious' including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
 
-8. Nov 21 21:50:01: first nefarious session
+8. 
+Nov 01 00:55:02 - Nov 16 9:20:40      Used msf3 a lot
+
+Nov 21 21:50:01: first nefarious session
 Nov 21 22:34:26: installed synaptic package manager
 
+Nov 23 20:00:52 - Nov 23 20:02:08      Used firefox and deleted a bunch of orphan files
 Nov 23 20:01:35: installed flash
 Nov 23 22:32:34: installed pidgin
 Nov 23 22:32:43: installed ruby
+Nov 23 22:34:48 - Nov 23 22:41:02      Fired up and used msf3
 Nov 23 22:47:22: configured proxy
 
 Nov 24 02:20:31: configured proxy
+Nov 24 02:15:05 - Nov 24 21:35:20      Started up and used gimp
 Nov 24 22:39:17: set eth0 essid 141.212.111.41
 Nov 24 22:39:22: set eth0 address to 141.212.111.41
 Nov 24 23:09:53: hydra usage
 Nov 24 23:09:57: hydra usage
 Nov 24 23:09:57: set wlan0 address to 141.212.111.41
 Nov 24 23:09:57: set eth0 address to 141.212.111.41
+Nov 24 23:10:42 - Nov 24 23:40:45      Accessed linux dictionaries, known_hosts file for ssh and Hydra
 Nov 24 23:37:30: set eth0 address to 141.212.111.41
 
+Nov 25 00:38:04 - Nov 25 00:44:32      Gimp and ImageMagick (for bitmap .bmp images) and Irssi (chat client) usage
+Nov 25 00:52:13 - Nov 25 01:56:29      Used irssi and accessed various freenode logs (including the planning log which revealed the accomplice)
 Nov 25 02:35:39: configured ssh
 Nov 25 02:38:15: configured ssh
+Nov 25 02:30:28 - Nov 25 03:54:27      Accessed ssh configs, known_hosts and Hydra
 Nov 25 03:55:15: hydra usage
 Nov 25 03:55:49: hydra usage
 Nov 25 03:56:26: hydra usage
+Nov 25 03:56:36 - Nov 25 03:56:54      more ImageMagick usage
 Nov 25 04:00:49: hydra usage
 Nov 25 04:01:17: hydra usage
+Nov 25 04:32:51 - Nov 25 14:08:31      started up and used Hydra along with the password.lst on his desktop
 Nov 25 04:34:47: configured proxy settings
 Nov 25 09:15:18: hydra usage
 
 Nov 29 16:14:57: removable disk used ('/media/cdrom0')
+Nov 29 16:16:44 - Nov 29 16:22:27       Accessed passwords.zip, his bash_history and deleted password[3-5].txt and the sqlite-journals from firefox
 
+Nov 30 12:13:59 Deleted a bunch of orphan files
 Nov 30 12:14:17: interaction with evil_plan.bmp
+Nov 30 12:14:38 Accessed and delete evil_plan.bmp in /3/home/nefarious/Documents
+Nov 30 12:16:46 Checked .bash_history and deleted some orphan files
 Nov 30 12:16:47: last nefarious session closed
+Nov 30 12:16:48 Accessed some logs.. Last activity on machine before suspect fled the country
 
 Evidence in 8a.txt.
 
