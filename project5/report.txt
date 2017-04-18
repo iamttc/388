@@ -1,51 +1,35 @@
+# Part 1
+
 1. The VM is unable to boot since there isn't a bootable OS. Evidence in 1a.png
 
 2. Puppy Linux. Evidence is in 2a.txt, 2b.txt.
 
 3. The username is nefarious, as that is the only directory in the /3/home directory.
 
-4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009, which is in the timeline of our crime. Evidence is in 4a.txt.
+4. Yes, according to the IRC chat log, nefarious chatted with another user (swolchok@swolchokhost.eecs.umich.edu) that went by the name 'accomplice' on Wed Nov 25 01:54:24 2009. This correspondence is in the timeline of our crime. Evidence is in 4a.txt.
 
-5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the password to unlock it (fcrackzip -D -p /usr/share/dict/words passwords.zip), which turned out to be 'warrant'. After unzipping (unzip -P warrant passwords.zip  -d ./done), it produced 5 password files, password1.txt through password5.txt. Evidence is in the password folder.
+5. There was an encrypted .zip file named 'passwords.zip' in nefarious' home directory. We used fcrackzip and the linux dictionary to discover the access password (fcrackzip -D -p /usr/share/dict/words passwords.zip), which turned out to be 'warrant' (lol). After unzipping (unzip -P warrant passwords.zip  -d ./done), it produced 5 password files, 'password1.txt' through 'password5.txt'. 'password5.txt' contained the ssh password for a remote machine (part 2). Evidence is in the password folder.
 
-6. Yes, there are several pieces of evidence in Nefarious's Mozilla Firefox installation, (/3/home/nefarious/.mozilla) that show that he researched Nerf Guns and bought one online.  First, his cookies reveal him going to wiki.answers.com, ehow.com, popularmechanics.com, and metacafe.com for information about Nerf guns (Evidence in 6a.txt). Second, his search bar history reveals him searching for "best nerf guns" (Evidence in 6b.txt). Third, his places.sqlite file, which "stores the annotations, bookmarks, favorite icons, input history, keywords, and browsing history" (Source: http://kb.mozillazine.org/Places.sqlite), had evidence (in addition to what we mentioned earlier) that Nefarious visited the hasbro website after googling for nerf guns, bought a nerf gun off Amazon after looking at a few different kinds (Tommy gun, BuzzBee Double Blaster), and read about Nerf Gun hacks on metacafe.com (Evidence in 6c.txt).
+6. Yes, there are several pieces of evidence in Nefarious's Mozilla Firefox installation (/3/home/nefarious/.mozilla) that show that he researched Nerf Guns and bought one online. First, his cookies reveal him navigating to wiki.answers.com, ehow.com, popularmechanics.com, and metacafe.com for information about Nerf guns (evidence in 6a.txt). Second, his search history reveals him searching for "best nerf guns" (evidence in 6b.txt). Next, his 'places.sqlite' file, which "stores the annotations, bookmarks, favorite icons, input history, keywords, and browsing history" (source: http://kb.mozillazine.org/Places.sqlite) had evidence that Nefarious visited the hasbro website after googling for nerf guns, viewed various models (Tommy gun, BuzzBee Double Blaster), bought one off Amazon, and read about Nerf Gun hacks on metacafe.com (evidence in 6c.txt).
 
-7. The subject deleted multiple password files under /3/home/nefarious including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
+7. The subject deleted multiple password files under '/3/home/nefarious' including 'password3.txt', 'password4.txt', and 'password5.txt'. He also deleted 'evil_plan.bmp' under the Documents folder. More password files such as 'password.lst.part' where deleted from the Desktop. This file, however, can be recovered and contains a list of popular unix passwords from the mid 90's. All .Xauthentication files have also been deleted, which are cookies used to authenticate X sessions. Evidence is in the password folder, 7a.txt.
 
 8. 
 
-9. In the /3/home/nefarious/.thumbnails/normal folder, there were png files containing the drawing of the plan. It depicts 'hapless victim' being shot by the subject. Evidence is 9a.png. Additionally, inside the firefox installation (Evidence 6*.txt), there was evidence of Nefarious googling and downloading the metasploit framework 3, and the msf3 files were found in his home directory. Along with this malicious tool, the remote login cracking program Hydra (and a list of passwords to try) was found in Nefarious's home directory, which he probably used to gain access to the machine discussed in Part 2.
+9. In the '/3/home/nefarious/.thumbnails/normal' folder, there were .png files containing the drawing of the attack. It depicts 'hapless victim' being shot by the subject. Evidence is 9a.png. Additionally, inside the firefox installation (evidence 6*.txt), there was evidence of Nefarious googling and downloading the metasploit framework 3, were found in his home directory under 'msf3'. Along with this malicious tool, the remote login cracking program Hydra (and a list of passwords to try) was found in Nefarious's home directory, which he probably used to gain access to the machine discussed in Part 2.
 
-/////// Part 2 ///////
+# Part 2
 
 remote machine: 141.212.111.42 -> 75.101.230.146
 password crack: hydra -L users.txt -P passwords/allpass.txt ssh://75.101.230.146
 password:       jjdMn7vM3wU5tA
 
-10. Who owns this machine, according to the files on it?
-The machine is owned by Dr. Academic Researcher. The only account under the home directory is 'academic', and the 'index.html' file mentions him.
+10. The machine is owned by Dr. Academic Researcher. The only account under the home directory is 'academic', and the full name is mentioned in 'index.html'.
 
-11. What does its purpose appear to be? (Hint: What network service is running?)
-The machine is hosting a web server on port 80. When nmapping the public IP (nmap 75.101.230.146), we notice only two open ports, 80 and 22. Port 80 is serving 'index.html' and port 22 is allowing ssh.
+11. When we [nmap]ped the public IP (nmap 75.101.230.146), we noticed only two open ports, 80 and 22. Port 80 is hosting a web server which displays 'index.html' and port 22 is allowing ssh.
 
-12. Was the suspect granted access to the machine, or was it
-    compromised? If the suspect was granted access, when? If it was
-    compromised, when and how was it compromised?
-The machine was compromised. In 'auth.log.2', we can see hundreds of failed ssh login attempts under the username 'root' (verified by pam_unix). This started on Nov 24 21:20:25 and was successful on Nov 25 10:36:43. We believe nefarious was the user trying to login because there are multiple occurances when the username 'nefarious' was used instead of root. This, however, provided the error 'Invalid user nefarious from 141.212.111.41'. He may have tried to login with his own account on accident. Based on the style of the attack and the original machine being inspected, we think nefarious used Hydra to conduct the attack. Nefarious also searched for common password lists on Firefox, downloaded one, and may have used this in conjuction with Hydra. This timeframe also lines up with the timeframe of the shooting attack.
+12. The machine was compromised. In 'auth.log.2', we can see hundreds of failed ssh login attempts under the username 'root' (authentication by pam_unix). This started on Nov 24 21:20:25 and was successful on Nov 25 10:36:43. We believe nefarious was the user trying to login because there are multiple occurances when the username 'nefarious' was used instead of root. This username provided the error 'Invalid user nefarious from 141.212.111.41' and was most likely used on accident. Based on the style of the attack and the original machine being inspected, we think nefarious used Hydra to crack the password for 'root'. Nefarious also searched for common password lists on Firefox, downloaded one, and probably used it in conjuction with Hydra. This timeframe also lines up with the timeframe of the shooting attack.
 
-13. In either case, it appears as though the suspect has abused his
-    access to the machine. How?
-The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three times again. He also set the static eth1 ip to 141.212.111.42. After inspecting var/log/apache2/access.log, there appeared to be a full python/perl/php site hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served. Evidence is in 13a.txt, 13b.txt.
+13. The root password was changed immediately after a successful shh login according to 'auth.log.2'. Upon viewing the bash history, we noticed nefarious changed the user password three more times. He also set the static eth1 ip to 141.212.111.42. After inspecting 'var/log/apache2/access.log', there appeared to be a full python/perl/php site previously hosted which made multiple requests to other sites including the git repo https://github.com/robertdavidgraham/masscan (entire Internet TCP port scanning). Now, only a single html file is served. Evidence is in 13a.txt, 13b.txt.
 
-14. Can you remedy the abuse?
-We believe there is embedded steganography on the machine, but we were unable to find examples. This notion is due to the sentence 'The Duck Flies at Midnight' present on the 'index.html' page. This is a common phrase used to represent steganography, as it is the first letter of each word in the sentence 'To human eyes, data usually contains known forms, like images,e-mail, sounds, and text. Most Internet data naturally includesgratuitous headers, too. These are media exploited using newcontroversial logical encodings: steganography and marking.' The second part of the message is 'Tame Uncle Sam'.
-
-/////// Notes ///////
-
-/Desktop/msf3
-mozilla sqlite journal
-hydra
-
-downloaded passwords and exploit framework (firefox downloads)
-
-Still haven't used pdf cracking tool.... should probably find a use for that
+14. We believe there is embedded steganography on the machine, but we were unable to find examples. This notion is due to the sentence 'The Duck Flies at Midnight' present on the 'index.html' page. This is a common phrase used to represent steganography, as it is the first letter of each word in the sentence 'To human eyes, data usually contains known forms, like images,e-mail, sounds, and text. Most Internet data naturally includesgratuitous headers, too.'
