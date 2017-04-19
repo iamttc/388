@@ -1,4 +1,0 @@
-root
-ubunut
-admin
-ec2-user
